@@ -44,12 +44,12 @@ db.locations.insert([{
     lat: 22.3369444,
     lng: 31.6255556
   },
-  wiki: "hhttps://en.wikipedia.org/wiki/Abu_Simbel_temples",
+  wiki: "https://en.wikipedia.org/wiki/Abu_Simbel_temples",
   details: "The Abu Simbel temples are two massive rock temples at Abu Simbel, a village in Nubia, southern Egypt, near the border with Sudan. They are situated on the western bank of Lake Nasser, about 230 km southwest of Aswan (about 300 km by road). The complex is part of the UNESCO World Heritage Site known as the 'Nubian Monuments', which run from Abu Simbel downriver to Philae (near Aswan). The twin temples were originally carved out of the mountainside during the reign of Pharaoh Ramesses II in the 13th century BC, as a lasting monument to himself and his queen Nefertari, to commemorate his victory at the Battle of Kadesh. Their huge external rock relief figures have become iconic."
 },
 {
   name: "Valley of the Kings",
-  location: location: {
+  location: {
     lat: 25.74083,
     lng: 32.60222
   },
@@ -82,7 +82,7 @@ db.locations.insert([{
   },
   wiki: "https://en.wikipedia.org/wiki/Karnak",
   details: "The Karnak Temple Complex, commonly known as Karnak, comprises a vast mix of decayed temples, chapels, pylons, and other buildings. Construction at the complex began during the reign of Senusret I in the Middle Kingdom and continued into the Ptolemaic period, although most of the extant buildings date from the New Kingdom."
-}]),
+}]);
 
 db.gods.remove({});
 
