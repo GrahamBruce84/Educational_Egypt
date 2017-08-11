@@ -16,7 +16,7 @@ EgyptQuery.prototype = {
 
   locationAll: function(callback) {
     MongoClient.connect(this.url, function(err, db) {
-      var collection = db.collection("location");
+      var collection = db.collection("locations");
       collection.find().toArray(function(err, result) {
         callback(result);
       })
