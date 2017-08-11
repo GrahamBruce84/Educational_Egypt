@@ -14,3 +14,5 @@ EgyptQuery.prototype = {
     })
   };
 }
+
+module.exports = EgyptQuery;
