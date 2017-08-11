@@ -1,8 +1,8 @@
 config = {
-  entry: __dirname + "/Src/app.js",
+  entry: __dirname + "/src/app.js",
   output: {
     filename: "bundle.js",
-    path: __dirname + "/Build"
+    path: __dirname + "/build"
   },
   devtool: 'source-map'
 }

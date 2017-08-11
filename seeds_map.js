@@ -113,7 +113,7 @@ db.gods.insert({
 },
 {
   name: "HORUS",
-  goddOf: "God of Vengeanc",
+  goddOf: "God of Vengeance",
   img: 
 },
 {
