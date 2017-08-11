@@ -21,6 +21,15 @@ EgyptQuery.prototype = {
         callback(result);
       })
     })
+  },
+
+  pyramidAll: function(callback) {
+    MongoClient.connect(this.url, function(err, db) {
+      var colllection = db.connect("pyramids");
+      collection.find().toArray(function(err, result) {
+        callback(result);
+      })
+    })
   }
 }
 
