@@ -6,13 +6,22 @@ var EgyptQuery = function() {
 
 EgyptQuery.prototype = {
   godAll: function(callback) {
-    MongoClient.connect(this.url. function(err, db) {
+    MongoClient.connect(this.url, function(err, db) {
       var collection = db.collection("gods");
       collection.find().toArray(function(err, result) {
         callback(result);
       })
     })
-  };
+  },
+
+  locationAll: function(callback) {
+    MongoClient.connect(this.url, function(err, db) {
+      var collection = db.collection("location");
+      collection.find().toArray(function(err, result) {
+        callback(result);
+      })
+    })
+  }
 }
 
 module.exports = EgyptQuery;

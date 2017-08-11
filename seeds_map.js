@@ -82,11 +82,11 @@ db.locations.insert({
   },
   wiki: "https://en.wikipedia.org/wiki/Karnak",
   details: "The Karnak Temple Complex, commonly known as Karnak, comprises a vast mix of decayed temples, chapels, pylons, and other buildings. Construction at the complex began during the reign of Senusret I in the Middle Kingdom and continued into the Ptolemaic period, although most of the extant buildings date from the New Kingdom."
-},
+}),
 
 db.gods.remove({});
 
-db.gods.insert({
+db.gods.insert([{
   name: "AMUN-Ra",
   goddOf: "The Hidden One",
   img: './client/build/image/amunra.png'
@@ -135,4 +135,4 @@ db.gods.insert({
   name: "GEB",
   goddOf: "God of Earth",
   img: './client/build/image/geb.png'
-})
+}])
