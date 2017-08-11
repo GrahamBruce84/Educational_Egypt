@@ -89,50 +89,50 @@ db.gods.remove({});
 db.gods.insert([{
   name: "AMUN-Ra",
   godOf: "The Hidden One",
-  img: './client/build/image/amunra.png'
+  img: ('/image/amunra.png')
 },
 {
   name: "MUT",
   godOf: "The Mother Goddess",
-  img: './client/build/image/mut.png'
+  img: ("/image/mut.png")
 },
 {
   name: "OSIRIS",
   godOf: "The King of Living",
-  img: './client/build/image/osiris.png'
+  img: ('/image/osiris.png')
 },
 {
   name: "ANUBIS",
   godOf: "The Divine Embalmer",
-  img: './client/build/image/aunbis.png'
+  img: ('/image/anubis.png')
 },
 {
   name: "RA",
   godOf: "The God of Sun & Radiance",
-  img: './client/build/image/ra.png'
+  img: ('/image/ra.png')
 },
 {
   name: "HORUS",
   godOf: "God of Vengeance",
-  img: './client/build/image/horus.png'
+  img: ('/image/horus.png')
 },
 {
   name: "THOTH",
   godOf: "God of Knowledge and Wisdom",
-  img: './client/build/image/thoth.png'
+  img: ('/image/thoth.png')
 },
 {
   name: "HATHOR",
   godOf: "Goddess of Motherhood",
-  img: './client/build/image/hathor.png'
+  img: ('/image/hathor.png')
 },
 {
   name: "SEKHMET",
   godOf: "Goddess of War and Healing",
-  img: './client/build/image/sekhmet.png'
+  img: ('./image/sekhmet.png')
 },
 {
   name: "GEB",
   godOf: "God of Earth",
-  img: './client/build/image/geb.png'
+  img: ('/image/geb.png')
 }]);
