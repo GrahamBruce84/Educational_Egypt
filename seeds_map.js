@@ -81,5 +81,5 @@ db.locations.insert({
     lng: 32.6586111
   },
   wiki: "https://en.wikipedia.org/wiki/Karnak",
-  details: "The Karnak Temple Complex, commonly known as Karnak (/ˈkɑːr.næk/[1]), comprises a vast mix of decayed temples, chapels, pylons, and other buildings. Construction at the complex began during the reign of Senusret I in the Middle Kingdom and continued into the Ptolemaic period, although most of the extant buildings date from the New Kingdom."
+  details: "The Karnak Temple Complex, commonly known as Karnak, comprises a vast mix of decayed temples, chapels, pylons, and other buildings. Construction at the complex began during the reign of Senusret I in the Middle Kingdom and continued into the Ptolemaic period, although most of the extant buildings date from the New Kingdom."
 },
