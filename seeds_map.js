@@ -89,50 +89,50 @@ db.gods.remove({});
 db.gods.insert({
   name: "AMUN-Ra",
   goddOf: "The Hidden One",
-  img: 
+  img: './client/build/image/amunra.png'
 },
 {
   name: "MUT",
   goddOf: "The Mother Goddess",
-  img: 
+  img: './client/build/image/mut.png'
 },
 {
   name: "OSIRIS",
   goddOf: "The King of Living",
-  img: 
+  img: './client/build/image/osiris.png'
 },
 {
   name: "ANUBIS",
   goddOf: "The Divine Embalmer",
-  img: 
+  img: './client/build/image/aunbis.png'
 },
 {
   name: "RA",
   goddOf: "The God of Sun & Radiance",
-  img: 
+  img: './client/build/image/ra.png'
 },
 {
   name: "HORUS",
   goddOf: "God of Vengeance",
-  img: 
+  img: './client/build/image/horus.png'
 },
 {
   name: "THOTH",
   goddOf: "God of Knowledge and Wisdom",
-  img: 
+  img: './client/build/image/thoth.png'
 },
 {
   name: "HATHOR",
   goddOf: "Goddess of Motherhood",
-  img: 
+  img: './client/build/image/hathor.png'
 },
 {
   name: "SEKHMET",
   goddOf: "Goddess of War and Healing",
-  img: 
+  img: './client/build/image/sekhmet.png'
 },
 {
   name: "GEB",
   goddOf: "God of Earth",
-  img: 
+  img: './client/build/image/geb.png'
 })
