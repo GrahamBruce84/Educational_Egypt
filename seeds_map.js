@@ -82,57 +82,57 @@ db.locations.insert({
   },
   wiki: "https://en.wikipedia.org/wiki/Karnak",
   details: "The Karnak Temple Complex, commonly known as Karnak, comprises a vast mix of decayed temples, chapels, pylons, and other buildings. Construction at the complex began during the reign of Senusret I in the Middle Kingdom and continued into the Ptolemaic period, although most of the extant buildings date from the New Kingdom."
-},
+}),
 
 db.gods.remove({});
 
 db.gods.insert({
   name: "AMUN-Ra",
-  goddOf: "The Hidden One",
+  godOf: "The Hidden One",
   img: './client/build/image/amunra.png'
 },
 {
   name: "MUT",
-  goddOf: "The Mother Goddess",
+  godOf: "The Mother Goddess",
   img: './client/build/image/mut.png'
 },
 {
   name: "OSIRIS",
-  goddOf: "The King of Living",
+  godOf: "The King of Living",
   img: './client/build/image/osiris.png'
 },
 {
   name: "ANUBIS",
-  goddOf: "The Divine Embalmer",
+  godOf: "The Divine Embalmer",
   img: './client/build/image/aunbis.png'
 },
 {
   name: "RA",
-  goddOf: "The God of Sun & Radiance",
+  godOf: "The God of Sun & Radiance",
   img: './client/build/image/ra.png'
 },
 {
   name: "HORUS",
-  goddOf: "God of Vengeance",
+  godOf: "God of Vengeance",
   img: './client/build/image/horus.png'
 },
 {
   name: "THOTH",
-  goddOf: "God of Knowledge and Wisdom",
+  godOf: "God of Knowledge and Wisdom",
   img: './client/build/image/thoth.png'
 },
 {
   name: "HATHOR",
-  goddOf: "Goddess of Motherhood",
+  godOf: "Goddess of Motherhood",
   img: './client/build/image/hathor.png'
 },
 {
   name: "SEKHMET",
-  goddOf: "Goddess of War and Healing",
+  godOf: "Goddess of War and Healing",
   img: './client/build/image/sekhmet.png'
 },
 {
   name: "GEB",
-  goddOf: "God of Earth",
+  godOf: "God of Earth",
   img: './client/build/image/geb.png'
 })
