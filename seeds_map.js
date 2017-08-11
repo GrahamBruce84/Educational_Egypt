@@ -2,7 +2,7 @@ use wonders_of_egypt;
 
 db.locations.remove({});
 
-db.locations.insert({
+db.locations.insert([{
   name: "The Great Pyramid at Giza",
   location: {
     lat: 29.9791750,
@@ -44,12 +44,12 @@ db.locations.insert({
     lat: 22.3369444,
     lng: 31.6255556
   },
-  wiki: "hhttps://en.wikipedia.org/wiki/Abu_Simbel_temples",
+  wiki: "https://en.wikipedia.org/wiki/Abu_Simbel_temples",
   details: "The Abu Simbel temples are two massive rock temples at Abu Simbel, a village in Nubia, southern Egypt, near the border with Sudan. They are situated on the western bank of Lake Nasser, about 230 km southwest of Aswan (about 300 km by road). The complex is part of the UNESCO World Heritage Site known as the 'Nubian Monuments', which run from Abu Simbel downriver to Philae (near Aswan). The twin temples were originally carved out of the mountainside during the reign of Pharaoh Ramesses II in the 13th century BC, as a lasting monument to himself and his queen Nefertari, to commemorate his victory at the Battle of Kadesh. Their huge external rock relief figures have become iconic."
 },
 {
   name: "Valley of the Kings",
-  location: location: {
+  location: {
     lat: 25.74083,
     lng: 32.60222
   },
@@ -82,57 +82,57 @@ db.locations.insert({
   },
   wiki: "https://en.wikipedia.org/wiki/Karnak",
   details: "The Karnak Temple Complex, commonly known as Karnak, comprises a vast mix of decayed temples, chapels, pylons, and other buildings. Construction at the complex began during the reign of Senusret I in the Middle Kingdom and continued into the Ptolemaic period, although most of the extant buildings date from the New Kingdom."
-}),
+}]);
 
 db.gods.remove({});
 
 db.gods.insert([{
   name: "AMUN-Ra",
-  goddOf: "The Hidden One",
+  godOf: "The Hidden One",
   img: './client/build/image/amunra.png'
 },
 {
   name: "MUT",
-  goddOf: "The Mother Goddess",
+  godOf: "The Mother Goddess",
   img: './client/build/image/mut.png'
 },
 {
   name: "OSIRIS",
-  goddOf: "The King of Living",
+  godOf: "The King of Living",
   img: './client/build/image/osiris.png'
 },
 {
   name: "ANUBIS",
-  goddOf: "The Divine Embalmer",
+  godOf: "The Divine Embalmer",
   img: './client/build/image/aunbis.png'
 },
 {
   name: "RA",
-  goddOf: "The God of Sun & Radiance",
+  godOf: "The God of Sun & Radiance",
   img: './client/build/image/ra.png'
 },
 {
   name: "HORUS",
-  goddOf: "God of Vengeance",
+  godOf: "God of Vengeance",
   img: './client/build/image/horus.png'
 },
 {
   name: "THOTH",
-  goddOf: "God of Knowledge and Wisdom",
+  godOf: "God of Knowledge and Wisdom",
   img: './client/build/image/thoth.png'
 },
 {
   name: "HATHOR",
-  goddOf: "Goddess of Motherhood",
+  godOf: "Goddess of Motherhood",
   img: './client/build/image/hathor.png'
 },
 {
   name: "SEKHMET",
-  goddOf: "Goddess of War and Healing",
+  godOf: "Goddess of War and Healing",
   img: './client/build/image/sekhmet.png'
 },
 {
   name: "GEB",
-  goddOf: "God of Earth",
+  godOf: "God of Earth",
   img: './client/build/image/geb.png'
-}])
+}]);
