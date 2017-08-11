@@ -1,0 +1,16 @@
+.img__wrap {
+  position: relative;
+  height: 300px;
+  
+}
+
+.img__description {
+  background-color: yellow;
+  visibility: hidden;
+  transition: opacity .2s, visibility .2s;
+}
+
+
+.img__description.titleShow {
+  visibility: visible;
+}

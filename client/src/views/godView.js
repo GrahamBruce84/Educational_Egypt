@@ -6,21 +6,29 @@ GodView.prototype = {
   render: function(god){
     console.log(god);
     god.forEach( function(god){
-      var ul = document.getElementById('gods_list');
-      var li = document.createElement('li');
-      li.innerText = god.name;
+      var list = document.getElementById('gods_list');
+      var p = document.createElement('p');
+      p.innerText = god.name + " " + god.godOf;
+      p.classList = "img__description";
       var image = document.createElement('img');
       image.src = god.img;
-      image.style.height = '200px';
-      var li1 = document.createElement('li');
-      li1.innerText = god.godOf;
-      var li2 = document.createElement('li');
-      li2.appendChild(image);     
-      ul.appendChild(li);
-      ul.appendChild(li1);
-      ul.appendChild(li2);
+      image.classList = "img__wrap";
+      var div = document.createElement('div');
+
+      image.addEventListener('mouseover', function(){
+        p.classList.add('titleShow');
+      })
+
+      image.addEventListener('mouseout', function(){
+        p.classList.remove('titleShow');
+      });
+
+      div.appendChild(image);
+      div.appendChild(p);
+      list.appendChild(div);
     })
   }
+
 }
 
 module.exports = GodView;
