@@ -1,4 +1,4 @@
-var ListView = require('./views/listView');
+var GodView = require('./views/godView');
 
 var app = function(){
   var url = "http://localhost:3000/api/egypt/gods";
@@ -16,7 +16,7 @@ var requestComplete = function(){
   if(this.status != 200) return;
   var jsonString = this.responseText;
   var godList = JSON.parse(jsonString);
-  var ui = new ListView(godList);
+  var ui = new GodView(godList);
 };
 
 window.addEventListener('load', app);
