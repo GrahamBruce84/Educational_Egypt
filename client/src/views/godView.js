@@ -6,6 +6,8 @@ GodView.prototype = {
   render: function(god){
     console.log(god);
     god.forEach( function(god){
+      var div = document.createElement('div');
+      div.classList = "godItem";
       var list = document.getElementById('gods_list');
       var p = document.createElement('p');
       p.innerText = god.name + " " + god.godOf;
@@ -13,8 +15,7 @@ GodView.prototype = {
       var image = document.createElement('img');
       image.src = god.img;
       image.classList = "god__wrap";
-      var div = document.createElement('div');
-      div.classList = "godItem";
+      
 
       image.addEventListener('mouseover', function(){
         p.classList.add('titleShow');
@@ -23,9 +24,9 @@ GodView.prototype = {
       image.addEventListener('mouseout', function(){
         p.classList.remove('titleShow');
       });
-
-      div.appendChild(image);
+      
       div.appendChild(p);
+      div.appendChild(image);
       list.appendChild(div);
     })
   }

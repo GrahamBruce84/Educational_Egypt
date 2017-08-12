@@ -1,14 +1,16 @@
+body{
+  background-color: pink;  
+}
+
 .godItem{
   height: 500px;
   width: 250px;
-  margin: 0;
+  margin: 10px;
 }
 
 .god__wrap {
-  position: relative;
   height: 100%;
   width: 100%;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   }
@@ -16,17 +18,17 @@
 .god__description {
   background-color: yellow;
   visibility: hidden;
-  height: 600px;
-  width: 300px;
+  height: -200px;
+  width: -250px;
   z-index: 1;
   margin: 0;
   display: flex;
   top: 0;
 }
 
-/*.god__description.titleShow {
+.god__description.titleShow {
   visibility: visible;
-}*/
+}
 
 
 
