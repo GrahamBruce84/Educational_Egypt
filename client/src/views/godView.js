@@ -9,10 +9,10 @@ GodView.prototype = {
       var list = document.getElementById('gods_list');
       var p = document.createElement('p');
       p.innerText = god.name + " " + god.godOf;
-      p.classList = "img__description";
+      p.classList = "god__description";
       var image = document.createElement('img');
       image.src = god.img;
-      image.classList = "img__wrap";
+      image.classList = "god__wrap";
       var div = document.createElement('div');
       div.classList = "godItem";
 
