@@ -31,15 +31,11 @@
 
 
 .letterItem{
-  height: 100px;
-  width: 90px;
   margin: 10px;
 }
 
 .letter__wrap {
   position: relative;
-  height: 100%;
-  width: 100%;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -49,8 +45,8 @@
 .letter__description {
   background-color: blue;
   visibility: hidden;
-  height: 100px;
-  width: 90px;
+  height: 70px;
+  width: 60px;
   z-index: 1;
   margin: 0;
   display: flex;
