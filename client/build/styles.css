@@ -2,6 +2,10 @@ body{
   background-color: pink;  
 }
 
+.gods_list{
+  margin: 15px;
+}
+
 .godItem{
   height: 500px;
   width: 250px;
@@ -13,19 +17,26 @@ body{
 .god__wrap {
   height: 100%;
   width: 100%;
+  margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
+
   }
 
 .god__description {
   background-color: yellow;
   visibility: hidden;
-  height: -200px;
-  width: -250px;
+  height: 100px;
+  width: 250px;
   z-index: 1;
   margin: 0;
-  display: flex;
+  display: block;
   top: 0;
+}
+
+p{
+  font-family: 'Bradley Hand';
+  font-size: 25px;
 }
 
 .god__description.titleShow {
@@ -35,6 +46,7 @@ body{
 
 
 .letterItem{
+  height: 70px;
   margin: 10px;
 }
 
@@ -47,13 +59,12 @@ body{
 }
 
 .letter__description {
-  background-color: blue;
   visibility: hidden;
   height: 70px;
   width: 60px;
   z-index: 1;
   margin: 0;
-  display: flex;
+  display: inline;
   top: 0;
 }
 
