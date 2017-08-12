@@ -30,7 +30,17 @@ EgyptQuery.prototype = {
         callback(result);
       })
     })
+  },
+
+  hieroglyphAll: function(callback){
+    MongoClient.connect(this.url, function(err, db) {
+      var collection = db.collection("hieroglyph");
+      collection.find().toArray(function(err, result) {
+        callback(result);
+      })
+    })
   }
+  
 }
 
 module.exports = EgyptQuery;

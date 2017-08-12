@@ -23,8 +23,15 @@ egyptRouter.get("/map", function(req, res) {
 egyptRouter.get("/pyramids", function(req, res) {
   query.pyramidAll(function(results) {
     res.json(results);
-
   })
 })
+
+egyptRouter.get("/hieroglyph", function(req, res) {
+  query.hieroglyphAll(function(results) {
+    res.json(results);
+  })
+})
+
+
 
 module.exports = egyptRouter;
