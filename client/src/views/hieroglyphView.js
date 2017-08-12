@@ -5,8 +5,14 @@ var HieroglyphView = function(hieroglyph){
 HieroglyphView.prototype = {
   render: function(hieroglyph){
     console.log(hieroglyph);
+    var list = document.getElementById('hieroglyph_list');
+
+    var info = document.createElement('p');
+    info.innerText = "Although hieroglyphics are Egyptian, the word hieroglyphics is Greek. “Hiero” means “holy” and “glyphics” means “marks” or “writings” – so the word means “holy writings“.";
+
+    list.appendChild(info);
+
     hieroglyph.forEach( function(letter){
-      var list = document.getElementById('hieroglyph_list');
       var p = document.createElement('p');
       p.innerText = letter.letter;
       p.classList = "letter__description";
