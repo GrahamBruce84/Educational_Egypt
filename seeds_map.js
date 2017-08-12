@@ -136,3 +136,110 @@ db.gods.insert([{
   godOf: "God of Earth",
   img: ('/image/geb.png')
 }]);
+
+db.hieroglyph.remove({});
+
+db.hieroglyph.insert([{
+  letter: "a",
+  img: ('/image/alphabet/a.jpg')
+},
+{
+  letter: "b",
+  img: ('/image/alphabet/b.jpg')
+},
+{
+  letter: "c",
+  img: ('/image/alphabet/c.jpg')
+},
+{
+  letter: "d",
+  img: ('/image/alphabet/d.jpg')
+},
+{
+  letter: "e",
+  img: ('/image/alphabet/e.jpg')
+},{
+  letter: "f",
+  img: ('/image/alphabet/f.jpg')
+},
+{
+  letter: "g",
+  img: ('/image/alphabet/g.jpg')
+},
+{
+  letter: "h",
+  img: ('/image/alphabet/h.jpg')
+},
+{
+  letter: "i",
+  img: ('/image/alphabet/i.jpg')
+},
+{
+  letter: "j",
+  img: ('/image/alphabet/j.jpg')
+},
+{
+  letter: "k",
+  img: ('/image/alphabet/k.jpg')
+},
+{
+  letter: "l",
+  img: ('/image/alphabet/l.jpg')
+},
+{
+  letter: "m",
+  img: ('/image/alphabet/m.jpg')
+},
+{
+  letter: "n",
+  img: ('/image/alphabet/n.jpg')
+},
+{
+  letter: "o",
+  img: ('/image/alphabet/o.jpg')
+},
+{
+  letter: "p",
+  img: ('/image/alphabet/p.jpg')
+},
+{
+  letter: "q",
+  img: ('/image/alphabet/q.jpg')
+},
+{
+  letter: "r",
+  img: ('/image/alphabet/r.jpg')
+},
+{
+  letter: "s",
+  img: ('/image/alphabet/s.jpg')
+},
+{
+  letter: "t",
+  img: ('/image/alphabet/t.jpg')
+},
+{
+  letter: "u",
+  img: ('/image/alphabet/u.jpg')
+},
+{
+  letter: "v",
+  img: ('/image/alphabet/v.jpg')
+},
+{
+  letter: "w",
+  img: ('/image/alphabet/w.jpg')
+},
+{
+  letter: "x",
+  img: ('/image/alphabet/x.jpg')
+},
+{
+  letter: "y",
+  img: ('/image/alphabet/y.jpg')
+},
+{
+  letter: "z",
+  img: ('/image/alphabet/z.jpg')
+}
+]);
