@@ -1,6 +1,7 @@
 var GodView = require('./views/godView');
 var PyramidView = require("./views/pyramidView")
 var HieroglyphView = require("./views/hieroglyphView")
+var MapView = require("./views/mapView")
 
 var app = function(){
   var godUrl = "http://localhost:3000/api/egypt/gods";
@@ -11,6 +12,9 @@ var app = function(){
 
   var hieroglyphUrl = "http://localhost:3000/api/egypt/hieroglyph";
   hieroglyphMakeRequest(hieroglyphUrl, hieroglyphRequestComplete);
+
+  var mapUrl = "http://localhost:3000/api/egypt/map";
+  mapMakeRequest(mapUrl, mapRequestComplete);
 }
 
 var godMakeRequest = function(url, callback){
@@ -55,7 +59,19 @@ var hieroglyphRequestComplete = function(){
   var ui = new HieroglyphView(hieroglyphList);
 };
 
+var mapMakeRequest = function(url, callback){
+  var request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.addEventListener('load', callback);
+  request.send();
+};
 
+var mapRequestComplete = function(){
+  if(this.status != 200) return;
+  var jsonString = this.responseText;
+  var mapList = JSON.parse(jsonString);
+  var ui = new MapView(mapList);
+};
 
 
 window.addEventListener('load', app);
