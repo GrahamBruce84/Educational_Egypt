@@ -141,105 +141,105 @@ db.hieroglyph.remove({});
 
 db.hieroglyph.insert([{
   letter: "a",
-  img: ('/image/alphabet/a.jpg')
+  img: ('/image/alphabet/a.png')
 },
 {
   letter: "b",
-  img: ('/image/alphabet/b.jpg')
+  img: ('/image/alphabet/b.png')
 },
 {
   letter: "c",
-  img: ('/image/alphabet/c.jpg')
+  img: ('/image/alphabet/c.png')
 },
 {
   letter: "d",
-  img: ('/image/alphabet/d.jpg')
+  img: ('/image/alphabet/d.png')
 },
 {
   letter: "e",
-  img: ('/image/alphabet/e.jpg')
+  img: ('/image/alphabet/e.png')
 },{
   letter: "f",
-  img: ('/image/alphabet/f.jpg')
+  img: ('/image/alphabet/f.png')
 },
 {
   letter: "g",
-  img: ('/image/alphabet/g.jpg')
+  img: ('/image/alphabet/g.png')
 },
 {
   letter: "h",
-  img: ('/image/alphabet/h.jpg')
+  img: ('/image/alphabet/h.png')
 },
 {
   letter: "i",
-  img: ('/image/alphabet/i.jpg')
+  img: ('/image/alphabet/i.png')
 },
 {
   letter: "j",
-  img: ('/image/alphabet/j.jpg')
+  img: ('/image/alphabet/j.png')
 },
 {
   letter: "k",
-  img: ('/image/alphabet/k.jpg')
+  img: ('/image/alphabet/k.png')
 },
 {
   letter: "l",
-  img: ('/image/alphabet/l.jpg')
+  img: ('/image/alphabet/l.png')
 },
 {
   letter: "m",
-  img: ('/image/alphabet/m.jpg')
+  img: ('/image/alphabet/m.png')
 },
 {
   letter: "n",
-  img: ('/image/alphabet/n.jpg')
+  img: ('/image/alphabet/n.png')
 },
 {
   letter: "o",
-  img: ('/image/alphabet/o.jpg')
+  img: ('/image/alphabet/o.png')
 },
 {
   letter: "p",
-  img: ('/image/alphabet/p.jpg')
+  img: ('/image/alphabet/p.png')
 },
 {
   letter: "q",
-  img: ('/image/alphabet/q.jpg')
+  img: ('/image/alphabet/q.png')
 },
 {
   letter: "r",
-  img: ('/image/alphabet/r.jpg')
+  img: ('/image/alphabet/r.png')
 },
 {
   letter: "s",
-  img: ('/image/alphabet/s.jpg')
+  img: ('/image/alphabet/s.png')
 },
 {
   letter: "t",
-  img: ('/image/alphabet/t.jpg')
+  img: ('/image/alphabet/t.png')
 },
 {
   letter: "u",
-  img: ('/image/alphabet/u.jpg')
+  img: ('/image/alphabet/u.png')
 },
 {
   letter: "v",
-  img: ('/image/alphabet/v.jpg')
+  img: ('/image/alphabet/v.png')
 },
 {
   letter: "w",
-  img: ('/image/alphabet/w.jpg')
+  img: ('/image/alphabet/w.png')
 },
 {
   letter: "x",
-  img: ('/image/alphabet/x.jpg')
+  img: ('/image/alphabet/x.png')
 },
 {
   letter: "y",
-  img: ('/image/alphabet/y.jpg')
+  img: ('/image/alphabet/y.png')
 },
 {
   letter: "z",
-  img: ('/image/alphabet/z.jpg')
+  img: ('/image/alphabet/z.png')
 }
 ]);
