@@ -90,7 +90,21 @@ HieroglyphView.prototype = {
     list.appendChild(div4);
 
 
+<<<<<<< HEAD
     
+=======
+    var p5 = document.createElement('p');
+    p5.innerText = hieroglyph[12].letter + hieroglyph[8].letter + hieroglyph[2].letter + hieroglyph[10].letter + " " + hieroglyph[18].letter + hieroglyph[0].letter + hieroglyph[12].letter + " ";
+    array5 = [12, 8, 2, 10, " ", 18, 0, 12];
+    var div5 = document.createElement('div');
+    array5.forEach( function(number){
+        var image = document.createElement('img');
+        image.src = hieroglyph[number].img;
+        div5.appendChild(image);
+    });
+    div5.appendChild(p5);
+    list.appendChild(div5);
+>>>>>>> writing
   }
 
 }
