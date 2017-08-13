@@ -6,7 +6,7 @@ var app = function(){
   godMakeRequest(godUrl, godRequestComplete);
 
   var pyramidUrl = "http://localhost:3000/api/egypt/pyramids"
-  makeRequest(pyramidUrl, requestComplete);
+  // makeRequest(pyramidUrl, requestComplete);
 }
 
 var godMakeRequest = function(url, callback){
