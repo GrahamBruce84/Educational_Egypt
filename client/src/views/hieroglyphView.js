@@ -47,7 +47,6 @@ HieroglyphView.prototype = {
     list.appendChild(para);
 
     var makeHieroglyphs = function(array, post){
-    
       var div = document.createElement('div');
       array.forEach(function(number){
         var image = document.createElement('img');
@@ -65,6 +64,11 @@ HieroglyphView.prototype = {
       });
       return array;
     };
+
+    var translate = document.getElementById('translate');
+    var more = document.createElement('p');
+    more.innerText = "Type a word in the box below and it will be translated into hieroglyphics for you."
+    translate.appendChild(more);
 
     var submit = document.getElementById('conversion');
     submit.addEventListener('submit', function(event){
