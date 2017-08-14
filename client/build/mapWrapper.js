@@ -298,7 +298,7 @@ var MapWrapper = function(container, center, zoom){
 }
 
 
-MapWrapper.prototype.addMarker = function(place) {
+MapWrapper.prototype.addMarker = function(place, infowindow) {
   var icon = {
       url: "./image/pyramids_marker.png",
       scaledSize: new google.maps.Size(50, 50)
@@ -308,10 +308,9 @@ MapWrapper.prototype.addMarker = function(place) {
     map: this.googleMap,
     icon: icon
   })
-  var infowindow = new google.maps.InfoWindow({
-    content: (place.name + "<br>" + "<br>" + place.details)
-  });
   marker.addListener('click', function(){
+    infowindow.close();
+    infowindow.setContent(place.name + "<br>" + "<br>" + place.details);
     infowindow.open(this.googleMap, marker);
   })
   this.markers.push(marker);
