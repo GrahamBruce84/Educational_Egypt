@@ -22,7 +22,8 @@ body{
 }
 
 .god__description {
-  background-color: yellow;
+  background-color: pink;
+
   visibility: hidden;
   height: 500px;
   width: 250px;
@@ -30,10 +31,10 @@ body{
   margin: 0;
   display: block;
   top: 0;
-  transition: transform 300ms ;
+  transition: transform 500ms ease-in;
 }
 
-.godItem:hover .god__description{
+.god__description.titleShow {
   transform: translate(0, -500px);
 }
 
@@ -65,8 +66,9 @@ p{
   width: 60px;
   z-index: 1;
   margin: 0;
-  display: inline;
+  display: block;
   top: 0;
+  text-align: center;
 }
 
 .letter__description.titleShow {

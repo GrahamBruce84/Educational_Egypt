@@ -15,13 +15,13 @@ GodView.prototype = {
       var image = document.createElement('img');
       image.src = god.img;
       image.classList = "god__wrap";
-      
+    
 
-      image.addEventListener('mouseenter', function(){
+      div.addEventListener('mousedown', function(){
         p.classList.add('titleShow');
       })
 
-      image.addEventListener('mouseout', function(){
+      div.addEventListener('mouseup', function(){
         p.classList.remove('titleShow');
       });
             
