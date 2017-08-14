@@ -25,7 +25,7 @@ EgyptQuery.prototype = {
 
   pyramidAll: function(callback) {
     MongoClient.connect(this.url, function(err, db) {
-      var colllection = db.connect("pyramids");
+      var collection = db.collection("pyramids");
       collection.find().toArray(function(err, result) {
         callback(result);
       })

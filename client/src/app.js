@@ -9,7 +9,7 @@ var app = function(){
 
 
   var pyramidUrl = "http://localhost:3000/api/egypt/pyramids"
-  // makeRequest(pyramidUrl, requestComplete);
+  pyramidMakeRequest(pyramidUrl, pyramidRequestComplete);
 
   var hieroglyphUrl = "http://localhost:3000/api/egypt/hieroglyph";
   hieroglyphMakeRequest(hieroglyphUrl, hieroglyphRequestComplete);
@@ -43,6 +43,7 @@ var pyramidRequestComplete = function(){
   if(this.status != 200) return;
   var jsonString = this.responseText;
   var pyramidPage = JSON.parse(jsonString);
+  console.log(pyramidPage)
   var ui = new PyramidView(pyramidPage);
 };
 
