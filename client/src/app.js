@@ -7,6 +7,7 @@ var app = function(){
   var godUrl = "http://localhost:3000/api/egypt/gods";
   godMakeRequest(godUrl, godRequestComplete);
 
+
   var pyramidUrl = "http://localhost:3000/api/egypt/pyramids"
   // makeRequest(pyramidUrl, requestComplete);
 

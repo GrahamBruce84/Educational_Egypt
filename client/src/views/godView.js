@@ -24,9 +24,9 @@ GodView.prototype = {
       image.addEventListener('mouseout', function(){
         p.classList.remove('titleShow');
       });
-      
-      div.appendChild(p);
+            
       div.appendChild(image);
+      div.appendChild(p);
       list.appendChild(div);
     })
   }

@@ -17,21 +17,24 @@ body{
 .god__wrap {
   height: 100%;
   width: 100%;
-  margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
-
-  }
+}
 
 .god__description {
   background-color: yellow;
   visibility: hidden;
-  height: 100px;
+  height: 500px;
   width: 250px;
   z-index: 1;
   margin: 0;
   display: block;
   top: 0;
+  transition: transform 300ms ease-in-out
+}
+
+.godItem:hover .god__description{
+  transform: translate(0, -500px);
 }
 
 p{
