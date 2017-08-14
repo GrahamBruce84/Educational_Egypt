@@ -17,7 +17,7 @@ GodView.prototype = {
       image.classList = "god__wrap";
       
 
-      image.addEventListener('mouseover', function(){
+      image.addEventListener('mouseenter', function(){
         p.classList.add('titleShow');
       })
 

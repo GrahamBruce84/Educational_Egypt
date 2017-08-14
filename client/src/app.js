@@ -5,20 +5,20 @@ var MapView = require("./views/mapView")
 
 var app = function(){
   var godUrl = "http://localhost:3000/api/egypt/gods";
-  godMakeRequest(godUrl, godRequestComplete);
+  makeRequest(godUrl, godRequestComplete);
 
 
   var pyramidUrl = "http://localhost:3000/api/egypt/pyramids"
-  // makeRequest(pyramidUrl, requestComplete);
+  makeRequest(pyramidUrl, pyramidRequestComplete);
 
   var hieroglyphUrl = "http://localhost:3000/api/egypt/hieroglyph";
-  hieroglyphMakeRequest(hieroglyphUrl, hieroglyphRequestComplete);
+  makeRequest(hieroglyphUrl, hieroglyphRequestComplete);
 
   var mapUrl = "http://localhost:3000/api/egypt/map";
-  mapMakeRequest(mapUrl, mapRequestComplete);
+  makeRequest(mapUrl, mapRequestComplete);
 }
 
-var godMakeRequest = function(url, callback){
+var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
   request.open("GET", url);
   request.addEventListener('load', callback);
@@ -32,13 +32,6 @@ var godRequestComplete = function(){
   var ui = new GodView(godList);
 };
 
-var pyramidMakeRequest = function(url, callback){
-  var request = new XMLHttpRequest();
-  request.open("GET", url);
-  request.addEventListener('load', callback);
-  request.send();
-};
-
 var pyramidRequestComplete = function(){
   if(this.status != 200) return;
   var jsonString = this.responseText;
@@ -46,25 +39,11 @@ var pyramidRequestComplete = function(){
   var ui = new PyramidView(pyramidPage);
 };
 
-var hieroglyphMakeRequest = function(url, callback){
-  var request = new XMLHttpRequest();
-  request.open("GET", url);
-  request.addEventListener('load', callback);
-  request.send();
-};
-
 var hieroglyphRequestComplete = function(){
   if(this.status != 200) return;
   var jsonString = this.responseText;
   var hieroglyphList = JSON.parse(jsonString);
   var ui = new HieroglyphView(hieroglyphList);
-};
-
-var mapMakeRequest = function(url, callback){
-  var request = new XMLHttpRequest();
-  request.open("GET", url);
-  request.addEventListener('load', callback);
-  request.send();
 };
 
 var mapRequestComplete = function(){
