@@ -7,9 +7,8 @@ var app = function(){
   var godUrl = "http://localhost:3000/api/egypt/gods";
   makeRequest(godUrl, godRequestComplete);
 
-
   var pyramidUrl = "http://localhost:3000/api/egypt/pyramids"
-  makeRequest(pyramidUrl, pyramidRequestComplete);
+  // pyramidMakeRequest(pyramidUrl, pyramidRequestComplete);
 
   var hieroglyphUrl = "http://localhost:3000/api/egypt/hieroglyph";
   makeRequest(hieroglyphUrl, hieroglyphRequestComplete);
