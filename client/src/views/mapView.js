@@ -6,7 +6,7 @@ var MapView = function(locations){
 
 MapView.prototype = {
   initialize: function(locations){
-    var center = { lat: 28, lng: 31 };
+    var center = { lat: 26.5, lng: 31 };
     var zoom = 6;
     var mapDiv = document.querySelector("#main-map");
     var map = new MapWrapper(mapDiv, center, zoom);
