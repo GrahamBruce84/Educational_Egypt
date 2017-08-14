@@ -5,10 +5,18 @@ var GodView = function(god){
 GodView.prototype = {
   render: function(god){
     console.log(god);
+
+    var list = document.getElementById('gods_list');
+    var para = document.createElement('p');
+    para.innerText = "Egyptians worshipped many gods and goddesses, far too many to count. Some of them looked like humans, others were part human and part animal and there were even some that looked just like animals."
+    var div = document.createElement('div');
+    list.appendChild(para);
+    list.appendChild(div);
+
+
     god.forEach( function(god){
       var div = document.createElement('div');
       div.classList = "godItem";
-      var list = document.getElementById('gods_list');
       var p = document.createElement('p');
       p.innerText = god.name + " " + god.godOf;
       p.classList = "god__description";
