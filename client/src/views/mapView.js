@@ -10,10 +10,11 @@ MapView.prototype = {
     var zoom = 6;
     var mapDiv = document.querySelector("#main-map");
     var map = new MapWrapper(mapDiv, center, zoom);
+    var infowindow = new google.maps.InfoWindow();
 
 
     locations.forEach(function(location){
-      map.addMarker(location);
+      map.addMarker(location, infowindow);
     })
 
   }
