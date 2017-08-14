@@ -1,7 +1,6 @@
 {
   "name": "group_project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,5 +17,14 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "mongodb": "^2.2.31"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrahamBruce84/Educational_Egypt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GrahamBruce84/Educational_Egypt/issues"
+  },
+  "homepage": "https://github.com/GrahamBruce84/Educational_Egypt#readme",
+  "description": ""
 }
