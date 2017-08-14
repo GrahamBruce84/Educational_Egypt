@@ -74,3 +74,8 @@ p{
 .letter__description.titleShow {
   visibility: visible;
 }
+
+#main-map{
+  height: 500px;
+  width: 500px;
+}
