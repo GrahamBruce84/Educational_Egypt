@@ -5,13 +5,12 @@ var MapView = function(locations){
 }
 
 MapView.prototype = {
-  initialize: function(){
+  initialize: function(locations){
     var center = { lat: 27, lng: 30 };
     var zoom = 8;
     var mapDiv = document.querySelector("#main-map");
     var map = new MapWrapper(mapDiv, center, zoom);
 
-    map.addClickEvent();
 
     locations.forEach(function(location){
       map.addMarker(location);

@@ -303,7 +303,7 @@ MapWrapper.prototype.addMarker = function(place) {
     map: this.googleMap
   })
   var infowindow = new google.maps.InfoWindow({
-    content: (place.name);
+    content: (place.name)
   });
   marker.addListener('click', function(){
     infowindow.open(this.googleMap, marker);
