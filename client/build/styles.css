@@ -9,6 +9,16 @@ section.transition {
     transition: all 1s ease-in-out;
 }
 
+ul {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Yatra One', cursive;
+  font-size: 50px;
+}
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -20,7 +30,7 @@ button {
   margin: 0 10px 0 0;
   padding: 15px 45px;
   font-size: 30px;
-  font-family: "Bradley Hand",serif;
+  font-family: 'Yatra One', cursive;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
@@ -35,7 +45,7 @@ button {
   height: 500px;
   width: 250px;
   margin: 10px;
-  font-family: 'Bradley Hand';
+  font-family: 'Yatra One', cursive;
   font-size: 20px;
 }
 
@@ -65,7 +75,7 @@ button {
 }
 
 p{
-  font-family: 'Bradley Hand';
+ font-family: 'Yatra One', cursive;
   font-size: 25px;
 }
 
