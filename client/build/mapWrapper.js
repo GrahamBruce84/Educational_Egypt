@@ -297,10 +297,16 @@ var MapWrapper = function(container, center, zoom){
   this.markers = [];
 }
 
+
 MapWrapper.prototype.addMarker = function(place) {
+  var icon = {
+      url: "./image/pyramids_marker.png",
+      scaledSize: new google.maps.Size(50, 50)
+  };
   var marker = new google.maps.Marker({
     position: place.location,
-    map: this.googleMap
+    map: this.googleMap,
+    icon: icon
   })
   var infowindow = new google.maps.InfoWindow({
     content: (place.name)
