@@ -1,5 +1,7 @@
 body{
-  background-color: #EDC9AF;  
+      background-color: #E3347E;
+      /* For WebKit (Safari, Chrome, etc) */
+      background: #E3347E -webkit-gradient(linear, left top, left bottom, from(#E35F34), to(#E3347E)) no-repeat;
 }
 
 section {
@@ -18,6 +20,7 @@ h1 {
   text-align: center;
   font-family: 'Yatra One', cursive;
   font-size: 50px;
+  color: #154360;
 }
 
 nav{
@@ -27,7 +30,7 @@ nav{
 
 button {
   display: inline-block;
-  background-color: #CDC6AE;
+  background-color: #F4D03F;
   margin: 0 10px 0 0;
   padding: 15px 45px;
   font-size: 30px;
@@ -36,6 +39,7 @@ button {
   appearance: none;
   box-shadow: none;
   border-radius: 25px;
+  color: #C0392B;
 }
 
 input {
@@ -63,7 +67,7 @@ input {
 }
 
 .god__description {
-  background-color: #EDC9AF;  
+  background-color: #F4D03F;  
   visibility: hidden;
   height: 500px;
   width: 250px;
@@ -74,6 +78,8 @@ input {
   justify-content: center;
   top: 0;
   transition: transform 500ms ease-in;
+  border: 10px groove #5DADE2;
+  border-radius: 15px;
 }
 
 .god__description.titleShow {
@@ -83,6 +89,7 @@ input {
 p{
  font-family: 'Yatra One', cursive;
   font-size: 25px;
+  color: #212F3C;
 }
 
 .god__description.titleShow {
