@@ -4,6 +4,8 @@
 .camel {
     top: 47%;
     left: 49%;
+    height: 50px;
+    z-index: 1;
 }
 
 #axis:hover .move-right{
@@ -14,11 +16,6 @@
 .object {
     position: absolute;
     transition: all 10s ease-in-out;
-}
-
-img{
-height: 50px;
-z-index: 1;
 }
 
 body{
