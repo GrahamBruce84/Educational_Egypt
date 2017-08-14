@@ -79,3 +79,9 @@ p{
   height: 500px;
   width: 500px;
 }
+
+.list-container {
+  width: 50%;
+  height:125px;
+  background-color: white;
+}
