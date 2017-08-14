@@ -90,41 +90,41 @@ HieroglyphView.prototype = {
     list.appendChild(div4);
 
 
-    var p5 = document.createElement('p');
-    p5.innerText = hieroglyph[12].letter + hieroglyph[8].letter + hieroglyph[2].letter + hieroglyph[10].letter + " " + hieroglyph[18].letter + hieroglyph[0].letter + hieroglyph[12].letter + " " + hieroglyph[19].letter + hieroglyph[0].letter + hieroglyph[18].letter + hieroglyph[7].letter + hieroglyph[0].letter + " " + hieroglyph[6].letter + hieroglyph[17].letter + hieroglyph[0].letter + hieroglyph[7].letter + hieroglyph[0].letter + hieroglyph[12].letter;
-    array5 = [12, 8, 2, 10];
-    array6 = [18, 0, 12];
-    array7 = [19, 0, 18, 7, 0];
-    array8 = [6, 17, 0, 7, 0, 12]
-    var div5 = document.createElement('div');
-    array5.forEach( function(number){
-        var image = document.createElement('img');
-        image.src = hieroglyph[number].img;
-        div5.appendChild(image);
-    });
-    var div6 = document.createElement('div');
-    array6.forEach( function(number){
-        var image = document.createElement('img');
-        image.src = hieroglyph[number].img;
-        div6.appendChild(image);
-    });
-    var div7 = document.createElement('div');
-    array7.forEach( function(number){
-        var image = document.createElement('img');
-        image.src = hieroglyph[number].img;
-        div7.appendChild(image);
-    });
-    var div8 = document.createElement('div');
-    array8.forEach( function(number){
-        var image = document.createElement('img');
-        image.src = hieroglyph[number].img;
-        div8.appendChild(image);
-    });
-    list.appendChild(div5);
-    list.appendChild(div6);
-    list.appendChild(div7);
-    list.appendChild(div8);
-    div8.appendChild(p5);
+    // var p5 = document.createElement('p');
+    // p5.innerText = hieroglyph[12].letter + hieroglyph[8].letter + hieroglyph[2].letter + hieroglyph[10].letter + " " + hieroglyph[18].letter + hieroglyph[0].letter + hieroglyph[12].letter + " " + hieroglyph[19].letter + hieroglyph[0].letter + hieroglyph[18].letter + hieroglyph[7].letter + hieroglyph[0].letter + " " + hieroglyph[6].letter + hieroglyph[17].letter + hieroglyph[0].letter + hieroglyph[7].letter + hieroglyph[0].letter + hieroglyph[12].letter;
+    // array5 = [12, 8, 2, 10];
+    // array6 = [18, 0, 12];
+    // array7 = [19, 0, 18, 7, 0];
+    // array8 = [6, 17, 0, 7, 0, 12]
+    // var div5 = document.createElement('div');
+    // array5.forEach( function(number){
+    //     var image = document.createElement('img');
+    //     image.src = hieroglyph[number].img;
+    //     div5.appendChild(image);
+    // });
+    // var div6 = document.createElement('div');
+    // array6.forEach( function(number){
+    //     var image = document.createElement('img');
+    //     image.src = hieroglyph[number].img;
+    //     div6.appendChild(image);
+    // });
+    // var div7 = document.createElement('div');
+    // array7.forEach( function(number){
+    //     var image = document.createElement('img');
+    //     image.src = hieroglyph[number].img;
+    //     div7.appendChild(image);
+    // });
+    // var div8 = document.createElement('div');
+    // array8.forEach( function(number){
+    //     var image = document.createElement('img');
+    //     image.src = hieroglyph[number].img;
+    //     div8.appendChild(image);
+    // });
+    // list.appendChild(div5);
+    // list.appendChild(div6);
+    // list.appendChild(div7);
+    // list.appendChild(div8);
+    // div8.appendChild(p5);
 
   }
 
