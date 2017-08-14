@@ -1,3 +1,26 @@
+.object {
+    position: absolute;
+}
+.camel {
+    top: 47%;
+    left: 49%;
+}
+
+#axis:hover .move-right{
+    transform: translate(64px,220px);
+
+}
+
+.object {
+    position: absolute;
+    transition: all 10s ease-in-out;
+}
+
+img{
+height: 50px;
+z-index: 1;
+}
+
 body{
   background-color: #EDC9AF;  
 }
@@ -130,4 +153,5 @@ p{
   width: 50%;
   height: 65px;
   background-color: white;
+  justify-content: center;
 }
