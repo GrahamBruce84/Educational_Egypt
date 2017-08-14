@@ -309,7 +309,7 @@ MapWrapper.prototype.addMarker = function(place) {
     icon: icon
   })
   var infowindow = new google.maps.InfoWindow({
-    content: (place.name)
+    content: (place.name + "<br>" + "<br>" + place.details)
   });
   marker.addListener('click', function(){
     infowindow.open(this.googleMap, marker);
