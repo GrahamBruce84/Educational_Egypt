@@ -39,7 +39,7 @@ HieroglyphView.prototype = {
 
     var list = document.getElementById('hieroglyph_quiz');
     var p1 = document.createElement('p');
-    p1.innerText = hieroglyph[7].letter + hieroglyph[4].letter + hieroglyph[11].letter + hieroglyph[11].letter + hieroglyph[14].letter;
+    p1.innerText = "hello";
     array1 = [7, 4, 11, 11, 14];
     var div1 = document.createElement('div');
     array1.forEach( function(number) {
@@ -52,7 +52,7 @@ HieroglyphView.prototype = {
 
 
     var p2 = document.createElement('p');
-    p2.innerText = hieroglyph[2].letter + hieroglyph[14].letter + hieroglyph[3].letter + hieroglyph[4].letter;
+    p2.innerText = "code";
     array2 = [2, 14, 3, 4];
     var div2 = document.createElement('div');
     array2.forEach( function(number){
@@ -65,7 +65,7 @@ HieroglyphView.prototype = {
 
 
     var p3 = document.createElement('p');
-    p3.innerText = hieroglyph[7].letter + hieroglyph[8].letter + hieroglyph[4].letter + hieroglyph[17].letter + hieroglyph[14].letter + hieroglyph[6].letter + hieroglyph[11].letter + hieroglyph[24].letter + hieroglyph[15].letter + hieroglyph[7].letter + hieroglyph[8].letter + hieroglyph[2].letter + hieroglyph[18].letter;
+    p3.innerText = "hieroglyphics";
     array3 = [7, 8, 4, 17, 14, 6, 11, 24, 15, 7, 8, 2, 18];
     var div3 = document.createElement('div');
     array3.forEach( function(number){
@@ -78,7 +78,7 @@ HieroglyphView.prototype = {
 
 
     var p4 = document.createElement('p');
-    p4.innerText = hieroglyph[15].letter + hieroglyph[24].letter + hieroglyph[17].letter + hieroglyph[0].letter + hieroglyph[12].letter + hieroglyph[8].letter + hieroglyph[3].letter + hieroglyph[18].letter;
+    p4.innerText = "pyramids";
     array4 = [15, 24, 17, 0, 12, 8, 3, 18];
     var div4 = document.createElement('div');
     array4.forEach( function(number){
