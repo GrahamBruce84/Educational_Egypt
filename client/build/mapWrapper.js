@@ -310,7 +310,7 @@ MapWrapper.prototype.addMarker = function(place, infowindow) {
   })
   marker.addListener('click', function(){
     infowindow.close();
-    infowindow.setContent(place.name + "<br>" + "<br>" + place.details);
+    infowindow.setContent(place.name + "<br>" + "<img width=400px src=" + place.image + ">" + "<br>" + place.details);
     infowindow.open(this.googleMap, marker);
   })
   this.markers.push(marker);
