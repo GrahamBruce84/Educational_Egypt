@@ -4,6 +4,7 @@ db.locations.remove({});
 
 db.locations.insert([{
   name: "The Great Pyramid at Giza",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1200px-Kheops-Pyramid.jpg",
   location: {
     lat: 29.9791750,
     lng: 31.1343583
@@ -13,6 +14,7 @@ db.locations.insert([{
 },
 {
   name: "Great Sphinx of Giza",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Great_Sphinx_of_Giza_May_2015.JPG/1200px-Great_Sphinx_of_Giza_May_2015.JPG",
   location: {
     lat: 29.971829446,
     lng: 31.135999456
@@ -22,6 +24,7 @@ db.locations.insert([{
 },
 {
   name: "Pyramid of Khafre",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pyramid_of_Khafre_Giza_Egypt_in_2015_2.jpg/1200px-Pyramid_of_Khafre_Giza_Egypt_in_2015_2.jpg",
   location: {
     lat: 29.9761111,
     lng: 31.1308333
@@ -31,6 +34,7 @@ db.locations.insert([{
 },
 {
   name: "Pyramid of Djoser",
+  image: "http://www.beautifulglobal.com/wp-content/uploads/2015/08/Pyramid-of-Djoser-Saqqara-Necropolis-Egypt-2.jpg",
   location: {
     lat: 22.3369444,
     lng: 31.6255556
@@ -40,6 +44,7 @@ db.locations.insert([{
 },
 {
   name: "Abu Simbel temples",
+  image: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Abu_Simbel_Temple_May_30_2007.jpg",
   location: {
     lat: 22.3369444,
     lng: 31.6255556
@@ -49,6 +54,7 @@ db.locations.insert([{
 },
 {
   name: "Valley of the Kings",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Valley_of_the_Kings_panorama.jpg/818px-Valley_of_the_Kings_panorama.jpg",
   location: {
     lat: 25.74083,
     lng: 32.60222
@@ -58,6 +64,7 @@ db.locations.insert([{
 },
 {
   name: "Valley of the Queens",
+  image: "http://images2.mygola.com/valley-of-the-queens_8439736_l.jpg",
   location: {
     lat: 25.7286000,
     lng: 32.5929000
@@ -67,6 +74,7 @@ db.locations.insert([{
 },
 {
   name: "Aswan",
+  image: "http://www.travcotravel.com/uploads/destinations/main/tour/Aswan.jpg",
   location: {
     lat: 24.0889000,
     lng: 32.8998000
@@ -76,6 +84,7 @@ db.locations.insert([{
 },
 {
   name: "Karnak",
+  image: "https://ka-perseus-images.s3.amazonaws.com/b02b406b5032091ff5d22d1e8e4349d516aec867.jpg",
   location: {
     lat: 25.7186111,
     lng: 32.6586111
