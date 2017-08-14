@@ -1,5 +1,5 @@
 body{
-  background-color: pink;  
+  background-color: #EDC9AF;  
 }
 
 section.transition {
@@ -12,6 +12,18 @@ section.transition {
 nav{
   display: flex;
   justify-content: space-around;
+}
+
+button {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-size: 30px;
+  font-family: "Bradley Hand",serif;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .gods_list{
