@@ -16,6 +16,7 @@ nav{
 
 button {
   display: inline-block;
+  background-color: green;
   margin: 0 10px 0 0;
   padding: 15px 45px;
   font-size: 30px;
@@ -23,7 +24,7 @@ button {
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 25px;
 }
 
 .gods_list{
