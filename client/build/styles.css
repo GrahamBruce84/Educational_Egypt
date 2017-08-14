@@ -30,7 +30,7 @@ body{
   margin: 0;
   display: block;
   top: 0;
-  transition: transform 300ms ease-in;
+  transition: transform 300ms ;
 }
 
 .godItem:hover .god__description{
@@ -45,8 +45,6 @@ p{
 .god__description.titleShow {
   visibility: visible;
 }
-
-
 
 .letterItem{
   height: 70px;
