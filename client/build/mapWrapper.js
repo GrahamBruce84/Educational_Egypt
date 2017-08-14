@@ -270,7 +270,7 @@ var MapWrapper = function(container, center, zoom){
     "elementType": "geometry.fill",
     "stylers": [
       {
-        "color": "#b9d3c2"
+        "color": "#73bfce"
       }
     ]
   },
