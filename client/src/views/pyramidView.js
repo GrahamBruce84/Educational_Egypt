@@ -9,6 +9,7 @@ PyramidView.prototype = {
 
         var pic = document.createElement("img");
         pic.src = items.image;
+        pic.className = "pyramidImage";
 
         var info = document.createElement("p");
         info.innerText = items.inform;

@@ -36,17 +36,21 @@ HieroglyphView.prototype = {
     });
     
     var list = document.getElementById('hieroglyph_quiz');
+    var decode = document.createElement('h1');
+    decode.innerText = "Decode the hieroglyphs";
+    list.appendChild(decode);
+    var para = document.createElement('p');
+    para.innerText = "Below are some hieroglyphs, can you use the symbols above to decipher them?";
+    list.appendChild(para);
 
-    var makeHieroglyphs = function(word, array, post){
-      var p = document.createElement('p');
-      p.innerText = word;
+    var makeHieroglyphs = function(array, post){
+    
       var div = document.createElement('div');
       array.forEach(function(number){
         var image = document.createElement('img');
         image.src = hieroglyph[number].img;
         div.appendChild(image);
       })
-      div.appendChild(p);
       post.appendChild(div);
     }
 
@@ -70,17 +74,17 @@ HieroglyphView.prototype = {
       characters = createArray(word);
       console.log(characters);
 
-      makeHieroglyphs(word, characters, input);
+      makeHieroglyphs(characters, input);
     });
     
-    makeHieroglyphs('hello', [7, 4, 11, 11, 14], list);
-    makeHieroglyphs('code', [2, 14, 3, 4], list);
-    makeHieroglyphs('hieroglyphics', [7, 8, 4, 17, 14, 6, 11, 24, 15, 7, 8, 2, 18], list);
-    makeHieroglyphs('pyramids', [15, 24, 17, 0, 12, 8, 3, 18], list);
-    makeHieroglyphs('Mick', [12, 8, 2, 10], list);
-    makeHieroglyphs('Sam', [18, 0, 12], list);
-    makeHieroglyphs('Tasha', [19, 0, 18, 7, 0], list);
-    makeHieroglyphs('Graham', [6, 17, 0, 7, 0, 12], list);
+    makeHieroglyphs([7, 4, 11, 11, 14], list); //'hello'
+    makeHieroglyphs([2, 14, 3, 4], list); //'code'
+    makeHieroglyphs([7, 8, 4, 17, 14, 6, 11, 24, 15, 7, 8, 2, 18], list); //'hieroglyphics'
+    makeHieroglyphs([15, 24, 17, 0, 12, 8, 3, 18], list); //'pyramids'
+    // makeHieroglyphs('Mick', [12, 8, 2, 10], list);
+    // makeHieroglyphs('Sam', [18, 0, 12], list);
+    // makeHieroglyphs('Tasha', [19, 0, 18, 7, 0], list);
+    // makeHieroglyphs('Graham', [6, 17, 0, 7, 0, 12], list);
   }
 
 }

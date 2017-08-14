@@ -2,11 +2,25 @@ body{
   background-color: #EDC9AF;  
 }
 
+section {
+ text-align: center;
+}
+
 section.transition {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+}
+
+ul {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Yatra One', cursive;
+  font-size: 50px;
 }
 
 nav{
@@ -20,11 +34,16 @@ button {
   margin: 0 10px 0 0;
   padding: 15px 45px;
   font-size: 30px;
-  font-family: "Bradley Hand",serif;
+  font-family: 'Yatra One', cursive;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
   border-radius: 25px;
+}
+
+input {
+  font-family: 'Yatra One', cursive;
+  font-size: 30px;
 }
 
 .gods_list{
@@ -35,7 +54,7 @@ button {
   height: 500px;
   width: 250px;
   margin: 10px;
-  font-family: 'Bradley Hand';
+  font-family: 'Yatra One', cursive;
   font-size: 20px;
 }
 
@@ -65,7 +84,7 @@ button {
 }
 
 p{
-  font-family: 'Bradley Hand';
+ font-family: 'Yatra One', cursive;
   font-size: 25px;
 }
 
@@ -109,6 +128,6 @@ p{
 
 .list-container {
   width: 50%;
-  height:125px;
+  height: 65px;
   background-color: white;
 }
