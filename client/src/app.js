@@ -16,6 +16,9 @@ var app = function(){
 
   var mapUrl = "http://localhost:3000/api/egypt/map";
   makeRequest(mapUrl, mapRequestComplete);
+
+  var button = document.getElementById('home');
+  button.addEventListener('click', homeClick);
 }
 
 var makeRequest = function(url, callback){
@@ -135,6 +138,23 @@ var mapClick = function(){
   welcomeSection.hidden = true;
 }
 
+var homeClick = function(){
+
+  var welcomeSection = document.querySelector('.welcome');
+  welcomeSection.hidden = false;
+
+  var mapSection = document.querySelector('.maps');
+  mapSection.hidden = true;
+
+  var hSection = document.querySelector('.hieroglyphs');
+  hSection.hidden = true;
+
+  var godSection = document.querySelector('.gods');
+  godSection.hidden = true;
+
+  var pyramidSection = document.querySelector('.pyramids');
+  pyramidSection.hidden = true;
+}
 
 
 window.addEventListener('load', app);
