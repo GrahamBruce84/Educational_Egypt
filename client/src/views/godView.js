@@ -7,11 +7,12 @@ GodView.prototype = {
     console.log(god);
 
     var list = document.getElementById('gods_list');
-    var para = document.createElement('p');
-    para.innerText = "Egyptians worshipped many gods and goddesses, far too many to count. Some of them looked like humans, others were part human and part animal and there were even some that looked just like animals."
-    var div = document.createElement('div');
-    list.appendChild(para);
-    list.appendChild(div);
+    var para1 = document.createElement('p');
+    para1.innerText = "Egyptians worshipped many gods and goddesses, far too many to count. Some of them looked like humans, others were part human and part animal and there were even some that looked just like animals."
+    list.appendChild(para1);
+    var para2 = document.createElement('p');
+    para2.innerText = "Below are some of the more important gods and goddesses. If you click and hold on the images you can find out their name as well as what they were known for."
+    list.appendChild(para2);
 
 
     god.forEach( function(god){

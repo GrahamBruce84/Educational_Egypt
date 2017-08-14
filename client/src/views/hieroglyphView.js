@@ -7,9 +7,12 @@ HieroglyphView.prototype = {
     console.log(hieroglyph);
     var heading = document.getElementById('hieroglyph_info');
 
-    var info = document.createElement('p');
-    info.innerText = "Although hieroglyphics are Egyptian, the word hieroglyphics is Greek. “Hiero” means “holy” and “glyphics” means “marks” or “writings” – so the word means “holy writings“.";
-    heading.appendChild(info);
+    var p1 = document.createElement('p');
+    p1.innerText = "Although hieroglyphics are Egyptian, the word hieroglyphics is Greek. “Hiero” means “holy” and “glyphics” means “marks” or “writings” – so the word means “holy writings“.";
+    heading.appendChild(p1);
+    var p2 = document.createElement('p');
+    p2.innerText = "The images below show hieroglyphics for the english alphabet. If you hover your mouse the images it will show you what letter is matches.";
+    heading.appendChild(p2);
 
 
     hieroglyph.forEach( function(letter){
@@ -40,11 +43,10 @@ HieroglyphView.prototype = {
     decode.innerText = "Decode the hieroglyphs";
     list.appendChild(decode);
     var para = document.createElement('p');
-    para.innerText = "Below are some hieroglyphs, can you use the symbols above to decipher them?";
+    para.innerText = "Below are some words that have been translate into hieroglyphics, can you use the symbols above to decipher them?";
     list.appendChild(para);
 
     var makeHieroglyphs = function(array, post){
-    
       var div = document.createElement('div');
       array.forEach(function(number){
         var image = document.createElement('img');
@@ -62,6 +64,11 @@ HieroglyphView.prototype = {
       });
       return array;
     };
+
+    var translate = document.getElementById('translate');
+    var more = document.createElement('p');
+    more.innerText = "Type a word in the box below and it will be translated into hieroglyphics for you."
+    translate.appendChild(more);
 
     var submit = document.getElementById('conversion');
     submit.addEventListener('submit', function(event){
