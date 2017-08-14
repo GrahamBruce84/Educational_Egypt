@@ -37,6 +37,11 @@ button {
   border-radius: 25px;
 }
 
+input {
+  font-family: 'Yatra One', cursive;
+  font-size: 30px;
+}
+
 .gods_list{
   margin: 15px;
 }
