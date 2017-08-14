@@ -101,7 +101,8 @@ p{
 
 #main-map{
   height: 500px;
-  width: 500px;
+  width: 100%;
+  margin-top: 15px;
 }
 
 .list-container {

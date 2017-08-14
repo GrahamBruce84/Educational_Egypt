@@ -16,22 +16,29 @@
     <button id="maps">Maps</button>
 </nav>
   <div class="the_site">
-    <section class="gods">
+  <section class="welcome">
+    <div id="welcome_page">
+      <h1>Welcome to Egypt</h1>
+    </div>
+  </section>
+    <section class="gods" hidden>
       <div id="gods_list" class="god__wrap"></div>
     </section>
-    <section class="pyramids">
+    <section class="pyramids" hidden>
       <ul id="pyramid-page"></ul>
     </section>
-    <h1>Hieroglyphics</h1>
-      <p id="hieroglyph_info"></p>
-      <div id="hieroglyph_list" class="letter__wrap"></div>
-      <div class="container">
-      <form action="/" id="conversion">
-        <input type="text" placeholder="word" name="word">
-        <button type="submit">Submit</button>
-      </form></div>
-      <div class="list-container" id="list-container"></div>
-      <div id="hieroglyph_quiz"></div>
+    <section class="hieroglyphs" hidden>
+      <h1>Hieroglyphics</h1>
+        <p id="hieroglyph_info"></p>
+        <div id="hieroglyph_list" class="letter__wrap"></div>
+        <div class="container">
+        <form action="/" id="conversion">
+          <input type="text" placeholder="word" name="word">
+          <button type="submit">Submit</button>
+        </form></div>
+        <div class="list-container" id="list-container"></div>
+        <div id="hieroglyph_quiz"></div>
+      </section>
     <section class="maps">
       <div id="main-map"></div>
     </section>
