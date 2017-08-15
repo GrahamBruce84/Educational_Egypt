@@ -92,7 +92,7 @@ body {
 body{
       background-color: #ffe79a;
             /* For WebKit (Safari, Chrome, etc) */
-            background: #ffe79a -webkit-gradient(linear, left top, left bottom, from(#F4D03F), to(#ffe79a)) no-repeat; 
+            background: #ffe79a -webkit-gradient(linear, left top, left bottom, from(#59d), to(#ffe79a)) no-repeat; 
 
 }
 
