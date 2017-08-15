@@ -29,6 +29,11 @@ var pauseMusic = function(){
   music.pause();
 }
 
+var playMusic = function(){
+  var music = document.getElementById('music');
+  music.play();
+}
+
 var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
   request.open("GET", url);
@@ -61,6 +66,8 @@ var godClick = function(){
 
   var mapSection = document.querySelector('.maps');
   mapSection.hidden = true;
+
+  pauseMusic();
 }
 
 var pyramidRequestComplete = function(){
@@ -90,6 +97,8 @@ var pyramidClick = function(){
 
   var welcomeSection = document.querySelector('.welcome');
   welcomeSection.hidden = true;
+
+  playMusic();
 }
 
 var hieroglyphRequestComplete = function(){
@@ -117,6 +126,8 @@ var hClick = function(){
 
   var welcomeSection = document.querySelector('.welcome');
   welcomeSection.hidden = true;
+
+  playMusic();
 }
 
 var mapRequestComplete = function(){
@@ -144,6 +155,8 @@ var mapClick = function(){
 
   var welcomeSection = document.querySelector('.welcome');
   welcomeSection.hidden = true;
+
+  playMusic();
 }
 
 var homeClick = function(){
@@ -162,6 +175,8 @@ var homeClick = function(){
 
   var pyramidSection = document.querySelector('.pyramids');
   pyramidSection.hidden = true;
+
+  playMusic();
 }
 
 
