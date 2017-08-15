@@ -90,9 +90,9 @@ body {
 }
 
 body{
-      background-color: #E3347E;
+      background-color: #ffe79a;
             /* For WebKit (Safari, Chrome, etc) */
-            background: #E3347E -webkit-gradient(linear, left top, left bottom, from(#E35F34), to(#E3347E)) no-repeat;
+            background: #ffe79a -webkit-gradient(linear, left top, left bottom, from(#59d), to(#ffe79a)) no-repeat; 
 
 }
 
@@ -268,6 +268,14 @@ p{
 }
 
 #mazecanvas{
+  margin: auto;
+  background: #eee;
+  border: 20px solid transparent;
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a3ed5 100%);
+  border-image-slice: 1;
+}
+
+#music-play{
   margin: auto;
   background: #eee;
   border: 20px solid transparent;

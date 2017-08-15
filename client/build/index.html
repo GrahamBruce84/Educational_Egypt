@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Ancient Egypt</title>
-  <embed src="/music/1 Hour of Ancient Egyptian Music.mp3" width="40" height="40" loop="false" autostart="false" hidden="true" />
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+  <audio id="music" src="/music/1 Hour of Ancient Egyptian Music.mp3" autoplay="true" hidden="true"></audio>
   <script src="bundle.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
-
-<nav>
-     
+  <nav>
     <h1>
       <button id="home">Home</button>
       <button id="gods">Gods</button>
@@ -29,12 +27,8 @@
       <div class='wave'></div>
       <div class='wave'></div>
     </div>
- 
-</nav>
-
-
+  </nav>
   <div class="the_site">
-
     <section class="welcome">
       <div id="welcome_page">
         <h1>Welcome to Egypt</h1>
@@ -44,6 +38,9 @@
     <section class="gods" hidden>
       <h1>The Egyptian Gods</h1>
       <div id="gods_list" class="god__wrap"></div>
+      <div id="video-play">
+      <iframe id="video" width="700" height="415" src="https://www.youtube.com/embed/e2cMS2SuWm0" frameborder="0" allowfullscreen></iframe>
+      </div>
     </section>
     <section class="pyramids" hidden>
       <h1>The Egyptian Pyramids</h1>
