@@ -58,6 +58,7 @@ HieroglyphView.prototype = {
 
     var createArray = function(word) {
       characters = [];
+      word = word.toLowerCase();
       characters = word.split('');
       array = characters.map(function(letter){
         return letter.charCodeAt(0) - 97;
