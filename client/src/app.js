@@ -20,8 +20,6 @@ var app = function(){
   var button = document.getElementById('home');
   button.addEventListener('click', homeClick);
 
-  var video = document.getElementById('video-play');
-  video.addEventListener('click', pauseMusic);
 }
 
 var pauseMusic = function(){
@@ -134,15 +132,18 @@ var mapRequestComplete = function(){
   if(this.status != 200) return;
   var jsonString = this.responseText;
   var mapList = JSON.parse(jsonString);
-  var ui = new MapView(mapList);
 
   var button = document.getElementById('maps');
-  button.addEventListener('click', mapClick);
+  button.addEventListener('click', function(){
+    mapClick(mapList)
+  })
 };
 
-var mapClick = function(){
+var mapClick = function(mapList){
   var mapSection = document.querySelector('.maps');
   mapSection.hidden = false;
+
+  var ui = new MapView(mapList);
 
   var hSection = document.querySelector('.hieroglyphs');
   hSection.hidden = true;
