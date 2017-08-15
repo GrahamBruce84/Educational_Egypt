@@ -36,10 +36,10 @@ db.locations.insert([{
   name: "Pyramid of Djoser",
   image: "http://www.beautifulglobal.com/wp-content/uploads/2015/08/Pyramid-of-Djoser-Saqqara-Necropolis-Egypt-2.jpg",
   location: {
-    lat: 22.3369444,
-    lng: 31.6255556
+    lat: 29.8713227,
+    lng: 31.216543
   },
-  wiki: "https://en.wikipedia.org/wiki/Abu_Simbel_temples",
+  wiki: "https://en.wikipedia.org/wiki/Pyramid_of_Djoser",
   details: "The Pyramid of Djoser (or Djeser and Zoser), or step pyramid (kbhw-ntrw in Egyptian) is an archeological remain in the Saqqara necropolis, Egypt, northwest of the city of Memphis. It was built during the 27th century BC for the burial of Pharaoh Djoser by his vizier, Imhotep. It is the central feature of a vast mortuary complex in an enormous courtyard surrounded by ceremonial structures and decoration."
 },
 {
