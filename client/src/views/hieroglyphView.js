@@ -36,6 +36,7 @@ HieroglyphView.prototype = {
     var list = document.getElementById('hieroglyph_quiz');
     var decode = document.createElement('h1');
     decode.innerText = "Decode the hieroglyphs";
+    decode.className = "heading";
     list.appendChild(decode);
     var para = document.createElement('p');
     para.innerText = "Below are some words that have been translate into hieroglyphics, can you use the symbols above to decipher them?";
