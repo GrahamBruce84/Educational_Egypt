@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ancient Egypt</title>
-  <embed src="/music/1 Hour of Ancient Egyptian Music.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />
+  <embed src="/music/1 Hour of Ancient Egyptian Music.mp3" width="40" height="40" loop="false" autostart="false" hidden="false" />
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
   <script src="bundle.js"></script>
@@ -11,6 +11,7 @@
 </head>
 <body>
   <nav>
+
     <button id="home">Home</button>
     <button id="gods">Gods</button>
     <button id="pyramids">Pyramids</button>
@@ -23,34 +24,36 @@
         <h1>Welcome to Egypt</h1>
         <p>Ancient Egypt was a civilization of ancient Northeastern Africa, concentrated along the lower reaches of the Nile River in the place that is now the country Egypt. It is one of six historic civilizations to arise independently. Egyptian civilization followed prehistoric Egypt and coalesced around 3150 BC (according to conventional Egyptian chronology) with the political unification of Upper and Lower Egypt under Menes (often identified with Narmer). The history of ancient Egypt occurred as a series of stable kingdoms, separated by periods of relative instability known as Intermediate Periods: the Old Kingdom of the Early Bronze Age, the Middle Kingdom of the Middle Bronze Age and the New Kingdom of the Late Bronze Age.</p>
       </div>
-    </section>
+    </section>    
     <section class="gods" hidden>
+     <transition name="bounce">
       <h1>The Egyptian Gods</h1>
       <div id="gods_list" class="god__wrap"></div>
-    </section>
-    <section class="pyramids" hidden>
-      <h1>The Egyptian Pyramids</h1>
-      <ul id="pyramid-page"></ul>
-    </section>
-    <section class="hieroglyphs" hidden>
-      <h1>Hieroglyphics</h1>
-      <p id="hieroglyph_info"></p>
-      <div id="hieroglyph_list" class="letter__wrap"></div>
-      <div id="hieroglyph_quiz"></div>
-      <h1 id="translate">Translate into Hieroglyphs</h1>
-        <div class="container">
-          <form action="/" id="conversion">
-            <input type="text" placeholder="word" name="word">
-            <button type="submit">Submit</button>
-          </form>
-          <div class="list-container" id="list-container"></div>
-        </div>
+    </transition>
+  </section>
+  <section class="pyramids" hidden>
+    <h1>The Egyptian Pyramids</h1>
+    <ul id="pyramid-page"></ul>
+  </section>
+  <section class="hieroglyphs" hidden>
+    <h1>Hieroglyphics</h1>
+    <p id="hieroglyph_info"></p>
+    <div id="hieroglyph_list" class="letter__wrap"></div>
+    <div id="hieroglyph_quiz"></div>
+    <h1 id="translate">Translate into Hieroglyphs</h1>
+    <div class="container">
+      <form action="/" id="conversion">
+        <input type="text" placeholder="word" name="word">
+        <button type="submit">Submit</button>
+      </form>
+      <div class="list-container" id="list-container"></div>
+    </div>
 
-    </section>
-    <section class="maps">
-      <h1>Explore Ancient Egypt</h1>
-      <div id="main-map"></div>
-    </section>
-  </div>
+  </section>
+  <section class="maps">
+    <h1>Explore Ancient Egypt</h1>
+    <div id="main-map"></div>
+  </section>
+</div>
 </body>
 </html>
