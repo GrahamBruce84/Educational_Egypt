@@ -22,7 +22,7 @@ PyramidView.prototype = {
 
       var maze = document.getElementById('pyramid-maze');
       var mazeInfo = document.createElement('p');
-      mazeInfo.innerText = "Pharaoh's were buried with their greatest treasures which made them a target by thieves. So stop them stealing all that wealth Egyptians would add mazes and traps!"
+      mazeInfo.innerText = "Pharaoh's were buried with their greatest treasures which made them a target by thieves. To stop them stealing all that wealth Egyptians would add mazes and traps!"
       var mazeInst = document.createElement('p');
       mazeInst.innerText = "Use W for Up, S for Down, A for Left and D for Right. Can you make your way through the pyramid's maze to get the Pharaoh's treasure, the red dot?"
       maze.appendChild(mazeInfo);

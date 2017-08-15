@@ -11,7 +11,7 @@ HieroglyphView.prototype = {
     p1.innerText = "Although hieroglyphics are Egyptian, the word hieroglyphics is Greek. “Hiero” means “holy” and “glyphics” means “marks” or “writings” – so the word means “holy writings“.";
     heading.appendChild(p1);
     var p2 = document.createElement('p');
-    p2.innerText = "The images below show hieroglyphics for the english alphabet. If you hover your mouse the images it will show you what letter is matches.";
+    p2.innerText = "The images below show hieroglyphics for the english alphabet. If you hover your mouse the images it will show you what letter it matches.";
     heading.appendChild(p2);
 
 
