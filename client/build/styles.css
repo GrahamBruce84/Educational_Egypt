@@ -203,32 +203,55 @@ p{
   visibility: visible;
 }
 
-.letterItem{
-  height: 70px;
-  margin: 10px;
+.flip-container {
+  perspective: 1000px;
+  background-color: white;
 }
 
-.letter__wrap {
+.flipper:hover, .flipper.hover {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flipper {
+  width:auto;
+  height:auto;
+  margin:10px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
   position: relative;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
 }
 
-.letter__description {
-  visibility: hidden;
-  height: 70px;
-  width: 60px;
-  z-index: 1;
-  margin: 0;
-  display: block;
-  top: 0;
-  text-align: center;
+.front, .back {
+  backface-visibility: hidden;
+  position: relative;
+  background-color: white;
+  margin: auto;
+  float:right;
+  width:auto;
+  height:auto;
 }
 
-.letter__description.titleShow {
-  visibility: visible;
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  font-size: 200%;
+  text-align: : center;
 }
 
 #main-map{
