@@ -93,6 +93,7 @@ body{
       background-color: #E3347E;
             /* For WebKit (Safari, Chrome, etc) */
             background: #E3347E -webkit-gradient(linear, left top, left bottom, from(#E35F34), to(#E3347E)) no-repeat;
+
 }
 
 section {
@@ -191,10 +192,6 @@ input {
   border-radius: 15px;
 }
 
-.god__description.titleShow {
-  transform: translate(0, -500px);
-}
-
 p{
  font-family: 'Yatra One', cursive;
   font-size: 25px;
@@ -202,6 +199,7 @@ p{
 }
 
 .god__description.titleShow {
+  transform: translate(0, -500px);
   visibility: visible;
 }
 
