@@ -48,7 +48,7 @@ PyramidView.prototype = {
         context.beginPath();
         context.arc(542, 122, 7, 0, 2 * Math.PI, false);
         context.closePath();
-        context.fillStyle = '#f70000';
+        context.fillStyle = '#FF0000';
         context.fill();
       };
       mazeImg.src = "/image/maze.gif";
@@ -64,20 +64,20 @@ PyramidView.prototype = {
       context.fill();
     }
 
-    function makeWhite(x, y, w, h) {
+    function makeWhite(xcoor, ycoor, width, height) {
       context.beginPath();
-      context.rect(x, y, w, h);
+      context.rect(xcoor, ycoor, width, height);
       context.closePath();
       context.fillStyle = "white";
       context.fill();
     }
 
-    function moveRect(e) {
+    function moveRect(event) {
       var newX;
       var newY;
       var canMove;
-      e = e || window.event;
-      switch (e.keyCode) {
+      event = event || window.event;
+      switch (event.keyCode) {
         case 38:
         case 87: 
         newX = currRectX;
@@ -128,7 +128,7 @@ PyramidView.prototype = {
             canMove = 0; 
             break;
           }
-          else if (data[i] === 0 && data[i + 1] === 255 && data[i + 2] === 0) { 
+          else if (data[i] === 255 && data[i + 1] === 0 && data[i + 2] === 0) { 
             canMove = 2; 
             break;
           }
