@@ -19,6 +19,14 @@ var app = function(){
 
   var button = document.getElementById('home');
   button.addEventListener('click', homeClick);
+
+  var video = document.getElementById('video-play');
+  video.addEventListener('click', pauseMusic);
+}
+
+var pauseMusic = function(){
+  var music = document.getElementById('music');
+  music.pause();
 }
 
 var makeRequest = function(url, callback){
