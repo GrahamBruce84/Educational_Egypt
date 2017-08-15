@@ -16,26 +16,21 @@ HieroglyphView.prototype = {
 
 
     hieroglyph.forEach( function(letter){
-      var list = document.getElementById('hieroglyph_list');
-      var p = document.createElement('p');
-      p.innerText = letter.letter;
-      p.classList = "letter__description";
+      var flipContainer = document.getElementById("flip-container");
+      var list = document.createElement('div');
+      list.classList = "flipper";
+      list.id = "flipper";
+      var div = document.createElement('div');
+      div.innerText = letter.letter;
+      div.classList = "back";
+      var imageDiv = document.createElement('div');
+      imageDiv.classList = "front";
       var image = document.createElement('img');
       image.src = letter.img;
-      image.classList = "letter__wrap";
-      var div = document.createElement('div');
-      div.classList = "letterItem";
-
-      image.addEventListener('mouseover', function(){
-        p.classList.add('titleShow');
-      })
-      image.addEventListener('mouseout', function(){
-        p.classList.remove('titleShow');
-      });
-
-      div.appendChild(image);
-      div.appendChild(p);
+      imageDiv.appendChild(image);
+      list.appendChild(imageDiv);
       list.appendChild(div);
+      flipContainer.appendChild(list);
     });
     
     var list = document.getElementById('hieroglyph_quiz');

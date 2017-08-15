@@ -52,7 +52,9 @@
     <section class="hieroglyphs" hidden>
       <h1 class="heading" id="heading">Hieroglyphics</h1>
       <p id="hieroglyph_info"></p>
-      <div id="hieroglyph_list" class="letter__wrap"></div>
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');", id="flip-container">
+      
+      </div>
       <div id="hieroglyph_quiz"></div>
       <h1 class="heading" id="translate">Translate into Hieroglyphs</h1>
       <div class="container">
@@ -62,8 +64,8 @@
         </form></div>
         <div class="list-container" id="list-container"></div>
       </section>
-      <section class="maps">
-        <h1 class="heading">Explore Ancient Egypt</h1>
+      <section class="maps" hidden>
+        <h1>Explore Ancient Egypt</h1>
         <div id="main-map"></div>
       </section>
     </div>
