@@ -93,6 +93,7 @@ body{
       background-color: #E3347E;
             /* For WebKit (Safari, Chrome, etc) */
             background: #E3347E -webkit-gradient(linear, left top, left bottom, from(#E35F34), to(#E3347E)) no-repeat;
+
 }
 
 section {
@@ -114,6 +115,11 @@ h1 {
   font-size: 50px;
   color: #154360;
 }
+
+/*nav{
+  display: flex;
+  justify-content: space-around;
+}*/
 
 button {
   display: inline-block;
@@ -252,4 +258,12 @@ p{
   border: 20px solid transparent;
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a3ed5 100%);
   border-image-slice: 1;
+  /*border-top: 20px solid #3acfd5;
+  border-bottom: 20px solid #3a4ed5;
+  box-sizing: border-box;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+  border-image-repeat: round;*/
+  /*border: 15px solid brown;*/
 }
