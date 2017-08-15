@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald");
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 40px;
-  background: #061161;
+  background: #595;
 }
 
 .wave {
@@ -88,13 +88,6 @@ body {
     transform: translate3d(-1000px, 0, 0);
   }
 }
-h1 {
-  margin: 0 0 40px;
-  font: 400 30px Oswald, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  color: #274727;
-}
 
 body{
       background-color: #E3347E;
@@ -116,16 +109,12 @@ ul {
 }
 
 h1 {
+  margin: 0 0 40px;
   text-align: center;
   font-family: 'Yatra One', cursive;
   font-size: 50px;
   color: #154360;
 }
-
-/*nav{
-  display: flex;
-  justify-content: space-around;
-}*/
 
 button {
   display: inline-block;
@@ -139,6 +128,10 @@ button {
   box-shadow: none;
   border-radius: 25px;
   color: #C0392B;
+}
+
+button:hover {
+  background-color: #2bb2c0;
 }
 
 input {
@@ -199,10 +192,6 @@ input {
   border-radius: 15px;
 }
 
-.god__description.titleShow {
-  transform: translate(0, -500px);
-}
-
 p{
  font-family: 'Yatra One', cursive;
   font-size: 25px;
@@ -210,6 +199,7 @@ p{
 }
 
 .god__description.titleShow {
+  transform: translate(0, -500px);
   visibility: visible;
 }
 
@@ -260,12 +250,4 @@ p{
   border: 20px solid transparent;
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a3ed5 100%);
   border-image-slice: 1;
-  /*border-top: 20px solid #3acfd5;
-  border-bottom: 20px solid #3a4ed5;
-  box-sizing: border-box;
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat;
-  background-size: 20px 100%;
-  border-image-repeat: round;*/
-  /*border: 15px solid brown;*/
 }
