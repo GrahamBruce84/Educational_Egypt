@@ -8,10 +8,10 @@ HieroglyphView.prototype = {
     var heading = document.getElementById('hieroglyph_info');
 
     var p1 = document.createElement('p');
-    p1.innerText = "Although hieroglyphics are Egyptian, the word hieroglyphics is Greek. “Hiero” means “holy” and “glyphics” means “marks” or “writings” – so the word means “holy writings“.";
+    p1.innerText = "Although hieroglyphics are Egyptian, the word hieroglyphics is Greek. “Hiero” means “holy” and “glyphics” means “marks” or “writings” – so the word means “holy writings“. The only reason that hisortians are able to understand hieroglyphics is a special record called the Rosetta Stone that was found in 1799.";
     heading.appendChild(p1);
     var p2 = document.createElement('p');
-    p2.innerText = "The images below show hieroglyphics for the english alphabet. If you hover your mouse the images it will show you what letter is matches.";
+    p2.innerText = "The images below show hieroglyphics for the english alphabet. If you hover your mouse over the images it will show you what letter it matches.";
     heading.appendChild(p2);
 
 
@@ -20,16 +20,18 @@ HieroglyphView.prototype = {
       var list = document.createElement('div');
       list.classList = "flipper";
       list.id = "flipper";
-      var div = document.createElement('div');
-      div.innerText = letter.letter;
-      div.classList = "back";
+      var letterDiv = document.createElement('div');
+      letterDiv.classList = "back";
+      var letterImage = document.createElement('img');
+      letterImage.src = letter.letterImg;
       var imageDiv = document.createElement('div');
       imageDiv.classList = "front";
       var image = document.createElement('img');
       image.src = letter.img;
+      letterDiv.appendChild(letterImage);
       imageDiv.appendChild(image);
       list.appendChild(imageDiv);
-      list.appendChild(div);
+      list.appendChild(letterDiv);
       flipContainer.appendChild(list);
     });
     
@@ -86,6 +88,7 @@ HieroglyphView.prototype = {
     makeHieroglyphs([7, 8, 4, 17, 14, 6, 11, 24, 15, 7, 8, 2, 18], list); //'hieroglyphics'
     makeHieroglyphs([15, 24, 17, 0, 12, 8, 3, 18], list); //'pyramids'
     makeHieroglyphs([13, 8, 11, 4], list); //'nile'
+    makeHieroglyphs([18, 19, 0, 17, 6, 0, 19, 4 ], list); //'stargate'
     // makeHieroglyphs('Mick', [12, 8, 2, 10], list);
     // makeHieroglyphs('Sam', [18, 0, 12], list);
     // makeHieroglyphs('Tasha', [19, 0, 18, 7, 0], list);

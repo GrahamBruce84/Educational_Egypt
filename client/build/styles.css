@@ -193,7 +193,6 @@ p{
 
 .flip-container {
   perspective: 1000px;
-  background-color: white;
 }
 
 .flipper:hover, .flipper.hover {
@@ -202,7 +201,7 @@ p{
 
 .flip-container, .front, .back {
   width: 80%;
-  height: 300px;
+  height: 320px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -224,7 +223,6 @@ p{
 .front, .back {
   backface-visibility: hidden;
   position: relative;
-  background-color: white;
   margin: auto;
   float:right;
   width:auto;
@@ -238,7 +236,6 @@ p{
 
 .back {
   transform: rotateY(180deg);
-  font-size: 200%;
   text-align: : center;
 }
 
@@ -251,8 +248,8 @@ p{
 .list-container {
   width: 50%;
   height: 65px;
-  background-color: white;
   display: inline-flex;
+  justify-content: center;
 }
 
 #mazecanvas{
