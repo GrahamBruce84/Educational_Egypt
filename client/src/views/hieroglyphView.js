@@ -89,6 +89,7 @@ HieroglyphView.prototype = {
     makeHieroglyphs([2, 14, 3, 4], list); //'code'
     makeHieroglyphs([7, 8, 4, 17, 14, 6, 11, 24, 15, 7, 8, 2, 18], list); //'hieroglyphics'
     makeHieroglyphs([15, 24, 17, 0, 12, 8, 3, 18], list); //'pyramids'
+    makeHieroglyphs([13, 8, 11, 4], list); //'nile'
     // makeHieroglyphs('Mick', [12, 8, 2, 10], list);
     // makeHieroglyphs('Sam', [18, 0, 12], list);
     // makeHieroglyphs('Tasha', [19, 0, 18, 7, 0], list);
