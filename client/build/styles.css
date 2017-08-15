@@ -1,7 +1,5 @@
 body{
-      background-color: #E3347E;
-      /* For WebKit (Safari, Chrome, etc) */
-      background: #E3347E -webkit-gradient(linear, left top, left bottom, from(#E35F34), to(#E3347E)) no-repeat;
+      /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,0.7))), url("image/egypt1");*/
 }
 
 section {
@@ -146,6 +144,20 @@ p{
   height: 500px;
   width: 100%;
   margin-top: 15px;
+}
+
+.welcome{
+  background-image: url('image/egypt1.png') no-repeat;
+  position: relative;
+}
+
+.welcome::before{
+  background-color: rgba(0, 0, 0, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .list-container {
