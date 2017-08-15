@@ -197,74 +197,92 @@ db.hieroglyph.insert([{
 },
 {
   letter: "i",
-  img: ('/image/alphabet/i.png')
+  img: ('/image/alphabet/i.png'),
+  letterImg: ('/image/alphabet/letterI.png')
 },
 {
   letter: "j",
-  img: ('/image/alphabet/j.png')
+  img: ('/image/alphabet/j.png'),
+  letterImg: ('/image/alphabet/letterJ.png')
 },
 {
   letter: "k",
-  img: ('/image/alphabet/k.png')
+  img: ('/image/alphabet/k.png'),
+  letterImg: ('/image/alphabet/letterK.png')
 },
 {
   letter: "l",
-  img: ('/image/alphabet/l.png')
+  img: ('/image/alphabet/l.png'),
+  letterImg: ('/image/alphabet/letterL.png')
 },
 {
   letter: "m",
-  img: ('/image/alphabet/m.png')
+  img: ('/image/alphabet/m.png'),
+  letterImg: ('/image/alphabet/letterM.png')
 },
 {
   letter: "n",
-  img: ('/image/alphabet/n.png')
+  img: ('/image/alphabet/n.png'),
+  letterImg: ('/image/alphabet/letterN.png')
 },
 {
   letter: "o",
-  img: ('/image/alphabet/o.png')
+  img: ('/image/alphabet/o.png'),
+  letterImg: ('/image/alphabet/letterO.png')
 },
 {
   letter: "p",
-  img: ('/image/alphabet/p.png')
+  img: ('/image/alphabet/p.png'),
+  letterImg: ('/image/alphabet/letterP.png')
 },
 {
   letter: "q",
-  img: ('/image/alphabet/q.png')
+  img: ('/image/alphabet/q.png'),
+  letterImg: ('/image/alphabet/letterQ.png')
 },
 {
   letter: "r",
-  img: ('/image/alphabet/r.png')
+  img: ('/image/alphabet/r.png'),
+  letterImg: ('/image/alphabet/letterR.png')
 },
 {
   letter: "s",
-  img: ('/image/alphabet/s.png')
+  img: ('/image/alphabet/s.png'),
+  letterImg: ('/image/alphabet/letterS.png')
 },
 {
   letter: "t",
-  img: ('/image/alphabet/t.png')
+  img: ('/image/alphabet/t.png'),
+  letterImg: ('/image/alphabet/letterT.png')
 },
 {
   letter: "u",
-  img: ('/image/alphabet/u.png')
+  img: ('/image/alphabet/u.png'),
+  letterImg: ('/image/alphabet/letterU.png')
 },
 {
   letter: "v",
-  img: ('/image/alphabet/v.png')
+  img: ('/image/alphabet/v.png'),
+  letterImg: ('/image/alphabet/letterV.png')
 },
 {
   letter: "w",
-  img: ('/image/alphabet/w.png')
+  img: ('/image/alphabet/w.png'),
+  letterImg: ('/image/alphabet/letterW.png')
 },
 {
   letter: "x",
-  img: ('/image/alphabet/x.png')
+  img: ('/image/alphabet/x.png'),
+  letterImg: ('/image/alphabet/letterX.png')
 },
 {
   letter: "y",
-  img: ('/image/alphabet/y.png')
+  img: ('/image/alphabet/y.png'),
+  letterImg: ('/image/alphabet/letterY.png')
 },
 {
   letter: "z",
-  img: ('/image/alphabet/z.png')
+  img: ('/image/alphabet/z.png'),
+  letterImg: ('/image/alphabet/letterZ.png')
 }
 ]);
