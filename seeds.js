@@ -157,34 +157,43 @@ db.hieroglyph.remove({});
 
 db.hieroglyph.insert([{
   letter: "a",
-  img: ('/image/alphabet/a.png')
+  img: ('/image/alphabet/a.png'),
+  letterImg: ('/image/alphabet/letterA.png')
 },
 {
   letter: "b",
-  img: ('/image/alphabet/b.png')
+  img: ('/image/alphabet/b.png'),
+  letterImg: ('/image/alphabet/letterB.png')
 },
 {
   letter: "c",
-  img: ('/image/alphabet/c.png')
+  img: ('/image/alphabet/c.png'),
+  letterImg: ('/image/alphabet/letterC.png')
 },
 {
   letter: "d",
-  img: ('/image/alphabet/d.png')
+  img: ('/image/alphabet/d.png'),
+  letterImg: ('/image/alphabet/letterD.png')
 },
 {
   letter: "e",
-  img: ('/image/alphabet/e.png')
-},{
+  img: ('/image/alphabet/e.png'),
+  letterImg: ('/image/alphabet/letterE.png')
+},
+{
   letter: "f",
-  img: ('/image/alphabet/f.png')
+  img: ('/image/alphabet/f.png'),
+  letterImg: ('/image/alphabet/letterF.png')
 },
 {
   letter: "g",
-  img: ('/image/alphabet/g.png')
+  img: ('/image/alphabet/g.png'),
+  letterImg: ('/image/alphabet/letterG.png')
 },
 {
   letter: "h",
-  img: ('/image/alphabet/h.png')
+  img: ('/image/alphabet/h.png'),
+  letterImg: ('/image/alphabet/letterH.png')
 },
 {
   letter: "i",

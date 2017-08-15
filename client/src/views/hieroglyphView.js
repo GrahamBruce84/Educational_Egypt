@@ -20,16 +20,18 @@ HieroglyphView.prototype = {
       var list = document.createElement('div');
       list.classList = "flipper";
       list.id = "flipper";
-      var div = document.createElement('div');
-      div.innerText = letter.letter;
-      div.classList = "back";
+      var letterDiv = document.createElement('div');
+      letterDiv.classList = "back";
+      var letterImage = document.createElement('img');
+      letterImage.src = letter.letterImg;
       var imageDiv = document.createElement('div');
       imageDiv.classList = "front";
       var image = document.createElement('img');
       image.src = letter.img;
+      letterDiv.appendChild(letterImage);
       imageDiv.appendChild(image);
       list.appendChild(imageDiv);
-      list.appendChild(div);
+      list.appendChild(letterDiv);
       flipContainer.appendChild(list);
     });
     
