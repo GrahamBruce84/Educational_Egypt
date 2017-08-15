@@ -253,3 +253,11 @@ p{
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a3ed5 100%);
   border-image-slice: 1;
 }
+
+#music-play{
+  margin: auto;
+  background: #eee;
+  border: 20px solid transparent;
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a3ed5 100%);
+  border-image-slice: 1;
+}
