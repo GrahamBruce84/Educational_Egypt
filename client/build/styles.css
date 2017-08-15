@@ -247,8 +247,8 @@ p{
 .list-container {
   width: 50%;
   height: 65px;
-  background-color: white;
   display: inline-flex;
+  justify-content: center;
 }
 
 #mazecanvas{
