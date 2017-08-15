@@ -141,6 +141,10 @@ button {
   color: #C0392B;
 }
 
+button:hover {
+  background-color: #2bb2c0;
+}
+
 input {
   font-family: 'Yatra One', cursive;
   font-size: 30px;
