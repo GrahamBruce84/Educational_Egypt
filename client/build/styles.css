@@ -116,6 +116,11 @@ h1 {
   color: #154360;
 }
 
+.heading {
+  background-color: #ffe79a;
+  border: 10px groove #59d;
+}
+
 button {
   display: inline-block;
   background-color: #F4D03F;
