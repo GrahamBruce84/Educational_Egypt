@@ -24,7 +24,7 @@ body {
 .river {
   position: relative;
   height: 150px;
-  background: #f4d03fa;
+  background: #F4D03F;
 }
 
 .river:before {
@@ -129,7 +129,7 @@ h1 {
 
 button {
   display: inline-block;
-  background-color: #ffe79a;
+  background-color: #F4D03F;
   margin: 0 10px 0 0;
   padding: 15px 45px;
   font-size: 30px;
