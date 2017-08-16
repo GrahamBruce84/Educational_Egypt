@@ -24,14 +24,14 @@ body {
 .river {
   position: relative;
   height: 150px;
-  background: #fffc77;
+  background: #fdfb90;
 }
 
 .river:before {
   bottom: 100%;
   width: 100%;
-  height: 50px;
-  background: #fffc77;
+  height: 55px;
+  background: #fdfb90;
 }
 
 .river:after{
@@ -115,11 +115,12 @@ ul {
 }
 
 h1 {
-  margin: 20px 0 40px;
-  text-align: center;
+  margin: 20px 0 26px;
   font-family: 'Yatra One', cursive;
   font-size: 50px;
   color: #154360;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*.heading {
@@ -127,7 +128,6 @@ h1 {
   border: 10px groove #59d;
   /*padding-top: 10px;
 }*/
-
 
 button {
   display: inline-block;
@@ -147,16 +147,31 @@ button:hover {
   background-color: #2bb2c0;
 }
 
+#home{
+  height: 150px;
+}
+
 #pyramids{
-  width: 200px;
+  position: relative;
+  top: 26px;
+  width: 300px;
+  border:  #fffc77;
+  z-index: 1;
+  /*padding-top: 50px;*/
 }
 
 #hieroglyphs{
-  width: 200px;
+  width: 300px;
+  z-index: 1;
 }
 
 #gods{
-  width: 200px;
+  height: 150px;
+  z-index: 1;
+}
+
+#maps{
+  height: 150px;
 }
 
 input {
