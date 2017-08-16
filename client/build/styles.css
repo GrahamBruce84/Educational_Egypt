@@ -24,14 +24,14 @@ body {
 .river {
   position: relative;
   height: 150px;
-  background: #F4D03F;
+  background: #ffe79a;
 }
 
 .river:before {
   bottom: 100%;
   width: 100%;
   height: 10px;
-  background: #F4D03F;
+  background: #ffe79a;
 }
 
 .river:after{
@@ -109,21 +109,16 @@ ul {
 }
 
 h1 {
-  margin: 0 0 40px;
+  margin: 20px 0 40px;
   text-align: center;
   font-family: 'Yatra One', cursive;
   font-size: 50px;
   color: #154360;
 }
 
-.heading {
-  background-color: #ffe79a;
-  border: 10px groove #59d;
-}
-
 button {
   display: inline-block;
-  background-color: #F4D03F;
+  background-color: #ffe79a;
   margin: 0 10px 0 0;
   padding: 15px 45px;
   font-size: 30px;
@@ -175,7 +170,6 @@ input {
   justify-content: center;
   top: 0;
   transition: transform 500ms ease-in;
-  border: 10px groove #5DADE2;
   border-radius: 15px;
 }
 
@@ -245,10 +239,14 @@ p{
 }
 
 .list-container {
-  width: 50%;
-  height: 65px;
+  width: 90%;
+  height: 100px;
   display: inline-flex;
   justify-content: center;
+}
+
+.pyramidImage {
+  border-radius: 30px;
 }
 
 #mazecanvas{
@@ -265,4 +263,5 @@ p{
   border: 20px solid transparent;
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a3ed5 100%);
   border-image-slice: 1;
+  margin: 30px;
 }
