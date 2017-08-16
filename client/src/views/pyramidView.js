@@ -33,8 +33,8 @@ PyramidView.prototype = {
     var canvas = document.getElementById("mazecanvas");
     var context = canvas.getContext("2d");
 
-    var currRectX = 145;
-    var currRectY = 15;
+    var currRectX = 146;
+    var currRectY = 19;
     var mazeWidth = 770;
     var mazeHeight = 556;
     var intervalVar;
@@ -46,9 +46,9 @@ PyramidView.prototype = {
         context.drawImage(mazeImg, 0, 0);
         drawRectangle(rectX, rectY, "#0000FF", false, true);
         context.beginPath();
-        context.arc(542, 122, 7, 0, 2 * Math.PI, false);
+        context.arc(490, 107, 7, 0, 2 * Math.PI, false);
         context.closePath();
-        context.fillStyle = '#FF0000';
+        context.fillStyle = 'rgb(160, 11, 168)';
         context.fill();
       };
       mazeImg.src = "/image/maze.gif";
@@ -128,7 +128,7 @@ PyramidView.prototype = {
             canMove = 0; 
             break;
           }
-          else if (data[i] === 255 && data[i + 1] === 0 && data[i + 2] === 0) { 
+          else if (data[i] === 160 && data[i + 1] === 11 && data[i + 2] === 168) { 
             canMove = 2; 
             break;
           }
@@ -140,7 +140,7 @@ PyramidView.prototype = {
       return canMove;
     }
 
-    drawMazeAndRectangle(145, 15);
+    drawMazeAndRectangle(146, 19);
     window.addEventListener("keydown", moveRect, true); 
   }
 }
