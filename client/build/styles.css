@@ -119,6 +119,10 @@ h1 {
   font-family: 'Yatra One', cursive;
   font-size: 50px;
   color: #154360;
+  text-align: center;
+}
+
+.nav-sand{
   display: flex;
   justify-content: space-around;
 }
