@@ -44,6 +44,7 @@ HieroglyphView.prototype = {
     list.appendChild(para);
 
     var makeHieroglyphs = function(array, post){
+      console.log(array);
       var div = document.createElement('div');
       array.forEach(function(number){
         if(number === " "){
