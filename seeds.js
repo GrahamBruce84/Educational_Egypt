@@ -98,52 +98,62 @@ db.gods.remove({});
 db.gods.insert([{
   name: "AMUN-Ra",
   godOf: "The Hidden One",
-  img: ('/image/amunra.png')
+  img: ('/image/amunra.png'),
+  info: "Amun-Ra is the oldest and most worshipped ruler of ancient egyput. His name means 'hidden light'."
 },
 {
   name: "MUT",
   godOf: "The Mother Goddess",
-  img: ("/image/mut.png")
+  img: ("/image/mut.png"),
+  info: "Mut is a self created god who gave birth to herself and not any other!"
 },
 {
   name: "OSIRIS",
   godOf: "The King of Living",
-  img: ('/image/osiris.png')
+  img: ('/image/osiris.png'),
+  info: "He is the oldest son of Geb. He is known as the god of the dead but he was also a god of resurrection and fertility."
 },
 {
   name: "ANUBIS",
   godOf: "The Divine Embalmer",
-  img: ('/image/anubis.png')
+  img: ('/image/anubis.png'),
+  info: "He was an exteremly ancient diety whos name appears in the oldest parts of tombs of the old kingdom as a guardian and protector of the dead."
 },
 {
   name: "RA",
   godOf: "The God of Sun & Radiance",
-  img: ('/image/ra.png')
+  img: ('/image/ra.png'),
+  info: "Ra was one of the most important gods and is known as the sun god. He was the supreme power in the universe and is sometimes represented as the ruler of all the gods."
 },
 {
   name: "HORUS",
   godOf: "God of Vengeance",
-  img: ('/image/horus.png')
+  img: ('/image/horus.png'),
+  info: "Considered to be a celestial falcon, and so his name could be a specific reference to the flight of the falcon, but could also be seen as a more general solar reference."
 },
 {
   name: "THOTH",
   godOf: "God of Knowledge and Wisdom",
-  img: ('/image/thoth.png')
+  img: ('/image/thoth.png'),
+  info: "Thoth is believed to have laid an egg from which Ra was born. Other myths suggest that Thoth created himself through the power of language."
 },
 {
   name: "HATHOR",
   godOf: "Goddess of Motherhood",
-  img: ('/image/hathor.png')
+  img: ('/image/hathor.png'),
+  info: "Her titles and attributes are so numerous that she was important in every area of life and death of the ancient egyptians."
 },
 {
   name: "SEKHMET",
   godOf: "Goddess of War and Healing",
-  img: ('./image/sekhmet.png')
+  img: ('./image/sekhmet.png'),
+  info: "One fo the oldest known dieties and her name name derives from the egyptian word 'sekhem' (which means 'power' or 'might'."
 },
 {
   name: "GEB",
   godOf: "God of Earth",
-  img: ('/image/geb.png')
+  img: ('/image/geb.png'),
+  info: "Osiris, Isis, Seth and Nephthyms were the children of Geb and his sister-wife Nut (the Goddess of the Sky)."
 }]);
 
 db.pyramids.remove({});
