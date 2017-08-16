@@ -30,8 +30,8 @@ body {
 .river:before {
   bottom: 100%;
   width: 100%;
-  height: 10px;
-  background: #f4d03f;
+  height: 50px;
+  background: #F4D03F;
 }
 
 .river:after{
@@ -39,6 +39,12 @@ body {
   width: 100%;
   height: 40px;
   background: #595; 
+  content: "The Nile is the longest river in the world at 4,258 miles";
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Yatra One', cursive;
+  color: #154360;
+
 }
 
 .wave {
@@ -116,6 +122,14 @@ h1 {
   color: #154360;
 }
 
+<<<<<<< HEAD
+/*.heading {
+  background-color: #ffe79a;
+  border: 10px groove #59d;
+}*/
+
+=======
+>>>>>>> d4f27474f851ac35cc54888e89943ff25038aecb
 button {
   display: inline-block;
   background-color: #ffe79a;
@@ -132,6 +146,10 @@ button {
 
 button:hover {
   background-color: #2bb2c0;
+}
+
+#pyramids{
+  
 }
 
 input {
