@@ -30,7 +30,7 @@ body {
 .river:before {
   bottom: 100%;
   width: 100%;
-  height: 10px;
+  height: 50px;
   background: #F4D03F;
 }
 
@@ -39,6 +39,12 @@ body {
   width: 100%;
   height: 40px;
   background: #595; 
+  content: "The Nile is the longest river in the world at 4,258 miles";
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Yatra One', cursive;
+  color: #154360;
+
 }
 
 .wave {
@@ -109,18 +115,19 @@ ul {
 }
 
 h1 {
-  margin: 0 0 40px;
+  margin: 20px 0 40px;
   text-align: center;
   font-family: 'Yatra One', cursive;
   font-size: 50px;
   color: #154360;
 }
 
-.heading {
+/*.heading {
   background-color: #ffe79a;
   border: 10px groove #59d;
-  /*padding-top: 10px;*/
-}
+  /*padding-top: 10px;
+}*/
+
 
 button {
   display: inline-block;
@@ -138,6 +145,10 @@ button {
 
 button:hover {
   background-color: #2bb2c0;
+}
+
+#pyramids{
+  height: 70px;
 }
 
 input {
@@ -176,7 +187,6 @@ input {
   justify-content: center;
   top: 0;
   transition: transform 500ms ease-in;
-  border: 10px groove #5DADE2;
   border-radius: 15px;
 }
 
@@ -246,10 +256,14 @@ p{
 }
 
 .list-container {
-  width: 50%;
-  height: 65px;
+  width: 90%;
+  height: 100px;
   display: inline-flex;
   justify-content: center;
+}
+
+.pyramidImage {
+  border-radius: 30px;
 }
 
 #mazecanvas{
@@ -266,4 +280,5 @@ p{
   border: 20px solid transparent;
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a3ed5 100%);
   border-image-slice: 1;
+  margin: 30px;
 }

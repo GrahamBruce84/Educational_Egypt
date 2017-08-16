@@ -4,7 +4,6 @@ var HieroglyphView = function(hieroglyph){
 
 HieroglyphView.prototype = {
   render: function(hieroglyph){
-    console.log(hieroglyph);
     var heading = document.getElementById('hieroglyph_info');
 
     var p1 = document.createElement('p');
@@ -45,21 +44,32 @@ HieroglyphView.prototype = {
     list.appendChild(para);
 
     var makeHieroglyphs = function(array, post){
+      console.log(array);
       var div = document.createElement('div');
       array.forEach(function(number){
+        if(number === " "){
+          var space = document.createElement('div');
+          space.innerText = " ";
+          div.appendChild(space);
+        } else {
         var image = document.createElement('img');
         image.src = hieroglyph[number].img;
         div.appendChild(image);
+      }
       })
       post.appendChild(div);
     }
 
-    var createArray = function(word) {
+    var createArray = function(words) {
       characters = [];
-      word = word.toLowerCase();
-      characters = word.split('');
+      words = words.toLowerCase();
+      characters = words.split('');
       array = characters.map(function(letter){
-        return letter.charCodeAt(0) - 97;
+        if(letter.charCodeAt(0) === 32){
+          return " ";
+        } else {
+          return letter.charCodeAt(0) - 97;
+        }
       });
       return array;
     };
@@ -74,11 +84,10 @@ HieroglyphView.prototype = {
       event.preventDefault();
       var input = document.getElementById('list-container');
       while(input.firstChild){
-          input.removeChild(input.firstChild);
+        input.removeChild(input.firstChild);
       }
       var word = this.word.value.toString();
       characters = createArray(word);
-      console.log(characters);
 
       makeHieroglyphs(characters, input);
     });
@@ -89,10 +98,6 @@ HieroglyphView.prototype = {
     makeHieroglyphs([15, 24, 17, 0, 12, 8, 3, 18], list); //'pyramids'
     makeHieroglyphs([13, 8, 11, 4], list); //'nile'
     makeHieroglyphs([18, 19, 0, 17, 6, 0, 19, 4 ], list); //'stargate'
-    // makeHieroglyphs('Mick', [12, 8, 2, 10], list);
-    // makeHieroglyphs('Sam', [18, 0, 12], list);
-    // makeHieroglyphs('Tasha', [19, 0, 18, 7, 0], list);
-    // makeHieroglyphs('Graham', [6, 17, 0, 7, 0, 12], list);
   }
 
 }
